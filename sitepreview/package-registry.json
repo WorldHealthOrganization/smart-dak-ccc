@@ -1,0 +1,23 @@
+{
+  "packages" : [
+    {
+      "path" : "dak-ccc/package-list.json",
+      "package-id" : "smart.who.int.dak-ccc",
+      "title" : "SMART DAK CCC",
+      "canonical" : "http://smart.who.int/dak-ccc",
+      "category" : "base",
+      "ci-build" : "http://worldhealthorganization.github.io/smart-dak-ccc",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.9.9",
+        "date" : "2024-05-08",
+        "path" : "http://smart.who.int/dak-ccc/v0.9.9"
+      },
+      "milestone" : {
+        "version" : "0.9.9",
+        "date" : "2024-05-08",
+        "path" : "http://smart.who.int/dak-ccc/v0.9.9"
+      }
+    }
+  ]
+}
