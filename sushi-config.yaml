@@ -3,11 +3,11 @@ canonical: http://smart.who.int/dak-ccc
 name: SMART_DAK_CCC
 title: SMART DAK CCC
 description: CCC DAK
-status: draft # draft | active | retired | unknown
-version: 0.9.9
+status: active # draft | active | retired | unknown
+version: 1.0.0
 fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
