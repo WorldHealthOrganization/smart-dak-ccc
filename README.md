@@ -7,11 +7,10 @@
 ![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-dak-ccc%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
 <!--/badges-->
 
-# WHO SMART GUIDELINES - EMPTY IG
-
-This is an empty framework, to be used to create SMART Implementation Guides.
+# WHO SMART GUIDELINES - DAK CCC
 
 
+CI BUILD: https://worldhealthorganization.github.io/smart-dak-ccc/
 ## Changes and feedback
 
 Feedback and issues about this empty framework can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
