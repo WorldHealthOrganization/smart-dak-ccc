@@ -10,3 +10,7 @@ Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
 Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $pubStatus = http://hl7.org/fhir/publication-status
+
+Alias: $actorType = http://hl7.org/fhir/examplescenario-actor-type
+
+Alias: $SGActor = http://smart.who.int/base/StructureDefinition/SGActor
