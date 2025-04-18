@@ -1,0 +1,1444 @@
+[
+  {
+    "id" : "allusers",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/allusers",
+    "version" : "1.0.0",
+    "name" : "All Users"
+  },
+  {
+    "id" : "automatedsystemnotification",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/automatedsystemnotification",
+    "version" : "1.0.0",
+    "name" : "Automated system notification"
+  },
+  {
+    "id" : "communityhealthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/communityhealthworker",
+    "version" : "1.0.0",
+    "name" : "Community health worker"
+  },
+  {
+    "id" : "facilityhealthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/facilityhealthworker",
+    "version" : "1.0.0",
+    "name" : "Facility health worker"
+  },
+  {
+    "id" : "facilitystafffacilitystaffinchargedistricthealthofficerstaff",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/facilitystafffacilitystaffinchargedistricthealthofficerstaff",
+    "version" : "1.0.0",
+    "name" : "Facility staff, facility staff in charge, district health officer/staff"
+  },
+  {
+    "id" : "healthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/healthworker",
+    "version" : "1.0.0",
+    "name" : "Health worker"
+  },
+  {
+    "id" : "healthworkerandneonateinfantchildcaregiver",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/healthworkerandneonateinfantchildcaregiver",
+    "version" : "1.0.0",
+    "name" : "Health worker and neonate/infant/child (caregiver)"
+  },
+  {
+    "id" : "healthworkerorclerk",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/healthworkerorclerk",
+    "version" : "1.0.0",
+    "name" : "Health worker or clerk"
+  },
+  {
+    "id" : "neonateinfantchildcaregiver",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-ccc/ActorDefinition/neonateinfantchildcaregiver",
+    "version" : "1.0.0",
+    "name" : "Neonate/infant/child (caregiver)"
+  },
+  {
+    "id" : "FXREQBusinessProcesses",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/dak-ccc/CodeSystem/FXREQBusinessProcesses",
+    "version" : "1.0.0",
+    "name" : "FXREQBusinessProcesses"
+  },
+  {
+    "id" : "FXREQCategories",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/dak-ccc/CodeSystem/FXREQCategories",
+    "version" : "1.0.0",
+    "name" : "FXREQCategories"
+  },
+  {
+    "id" : "smart.who.int.dak-ccc",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc",
+    "version" : "1.0.0",
+    "name" : "DakCcc"
+  },
+  {
+    "id" : "CHE.FXREQ.001.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.001.E",
+    "version" : "1.0.0",
+    "name" : "Provide a list of follow-up location options and contact details"
+  },
+  {
+    "id" : "CHE.FXREQ.001.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.001.F",
+    "version" : "1.0.0",
+    "name" : "Produce a range of prepared and ad hoc reports and analyses "
+  },
+  {
+    "id" : "CHE.FXREQ.001.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.001.G",
+    "version" : "1.0.0",
+    "name" : "Solution must be able to leverage the data dictionary (to be produced as part of workstream 2/3 work) "
+  },
+  {
+    "id" : "CHE.FXREQ.002.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.002.C",
+    "version" : "1.0.0",
+    "name" : "Allow the recording of key observations during a visit and a space to make general notes about the consultation and treatment provided"
+  },
+  {
+    "id" : "CHE.FXREQ.002.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.002.D",
+    "version" : "1.0.0",
+    "name" : "Provide a list of emergency referral locations and contact details if local emergency number (e.g. 911/999) is not used"
+  },
+  {
+    "id" : "CHE.FXREQ.002.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.002.E",
+    "version" : "1.0.0",
+    "name" : "Display a schedule of available days"
+  },
+  {
+    "id" : "CHE.FXREQ.002.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.002.F",
+    "version" : "1.0.0",
+    "name" : "Be able to view data on my own performance and service delivery  "
+  },
+  {
+    "id" : "CHE.FXREQ.002.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.002.G",
+    "version" : "1.0.0",
+    "name" : "Provide a modular approach to the solution to accommodate variations required to make the solution country-specific, for example: \n- ability to use/not to use personal identifiers for registration \n- include a focus on symptoms/diagnosis that may appear in a country-susceptible manner (malaria, HIV)\n- treatment modules that may be available in the country/setting (e.g. oral only vs injections)"
+  },
+  {
+    "id" : "CHE.FXREQ.003.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.003.C",
+    "version" : "1.0.0",
+    "name" : "Provide decision support as appropriate for users based on the data entered"
+  },
+  {
+    "id" : "CHE.FXREQ.003.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.003.D",
+    "version" : "1.0.0",
+    "name" : "Provide a list of referral location options, specialisms and contact details"
+  },
+  {
+    "id" : "CHE.FXREQ.003.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.003.E",
+    "version" : "1.0.0",
+    "name" : "Indicate (based on protocol) the preferred days for follow-up contact"
+  },
+  {
+    "id" : "CHE.FXREQ.003.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.003.F",
+    "version" : "1.0.0",
+    "name" : "Be able to run calculations on data to populate indicators or reports on my own performance and service delivery – calculations on data should be conducted with Fast Health Interoperability Resources (FHIR) and contextual query language"
+  },
+  {
+    "id" : "CHE.FXREQ.003.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.003.G",
+    "version" : "1.0.0",
+    "name" : "Manage clinical algorithm guidance changes through a change management process with quality assurance (using a reference system) and be able to push the information out to all solutions in use "
+  },
+  {
+    "id" : "CHE.FXREQ.004.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.004.B",
+    "version" : "1.0.0",
+    "name" : "To be able to choose the option to refer in general to the SMART guidance without having to complete a full consultation (e.g. for training/reference only) "
+  },
+  {
+    "id" : "CHE.FXREQ.004.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.004.C",
+    "version" : "1.0.0",
+    "name" : "Suggest appropriate treatments/investigations based on findings including the ability to propose alternative treatments in the case that the primary treatment is not available"
+  },
+  {
+    "id" : "CHE.FXREQ.004.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.004.D",
+    "version" : "1.0.0",
+    "name" : "Be able to find out where a treatment method may be available nearby "
+  },
+  {
+    "id" : "CHE.FXREQ.004.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.004.E",
+    "version" : "1.0.0",
+    "name" : "Record identification and tracking information (such as mobile phone number) "
+  },
+  {
+    "id" : "CHE.FXREQ.004.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.004.G",
+    "version" : "1.0.0",
+    "name" : "Be able to track treatments via reference numbers so that these can be updated as required and can be used to create \"treatment modules\" pertinent to a country or emergency setting"
+  },
+  {
+    "id" : "CHE.FXREQ.005.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.A",
+    "version" : "1.0.0",
+    "name" : "Bypass the standard flow at any point if an urgent case is identified – Refer to Business Process G. Triage and assessment"
+  },
+  {
+    "id" : "CHE.FXREQ.005.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.B",
+    "version" : "1.0.0",
+    "name" : "To be able to choose the option of a consultation that leads me through the full process to assess and classify the sick child and further to treat the child, referral and follow-up"
+  },
+  {
+    "id" : "CHE.FXREQ.005.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.C",
+    "version" : "1.0.0",
+    "name" : "Be able to show improvements or decline of a client's health based on previous/current consultations including before and after treatment"
+  },
+  {
+    "id" : "CHE.FXREQ.005.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.D",
+    "version" : "1.0.0",
+    "name" : "Find facilities that can provide the service or treatment method that mine cannot provide. "
+  },
+  {
+    "id" : "CHE.FXREQ.005.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.E",
+    "version" : "1.0.0",
+    "name" : "Display the number of existing contacts per day (to allow for balancing)"
+  },
+  {
+    "id" : "CHE.FXREQ.005.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.005.G",
+    "version" : "1.0.0",
+    "name" : "Be able to differentiate between simple and complex care provision requirements"
+  },
+  {
+    "id" : "CHE.FXREQ.006.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.006.A",
+    "version" : "1.0.0",
+    "name" : "Be able to gather the client's caregiver basic information (if required)"
+  },
+  {
+    "id" : "CHE.FXREQ.006.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.006.B",
+    "version" : "1.0.0",
+    "name" : "To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available. "
+  },
+  {
+    "id" : "CHE.FXREQ.006.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.006.C",
+    "version" : "1.0.0",
+    "name" : "Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)"
+  },
+  {
+    "id" : "CHE.FXREQ.006.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.006.E",
+    "version" : "1.0.0",
+    "name" : "Notify/send a reminder to the client's caregiver for the referral appointment "
+  },
+  {
+    "id" : "CHE.FXREQ.006.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.006.G",
+    "version" : "1.0.0",
+    "name" : "Be able to build the type of solution suitable for my country/setting using the correct modules according to preferences"
+  },
+  {
+    "id" : "CHE.FXREQ.007.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.007.A",
+    "version" : "1.0.0",
+    "name" : "Be able to gather unique identifier number/information pertaining to the client that does not include personal information "
+  },
+  {
+    "id" : "CHE.FXREQ.007.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.007.B",
+    "version" : "1.0.0",
+    "name" : "Identify key symptoms and signs that may require medical attention"
+  },
+  {
+    "id" : "CHE.FXREQ.007.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.007.C",
+    "version" : "1.0.0",
+    "name" : "Provide decision support as appropriate for users "
+  },
+  {
+    "id" : "CHE.FXREQ.007.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.007.D",
+    "version" : "1.0.0",
+    "name" : "Be able to share my client’s health records with the referral facility "
+  },
+  {
+    "id" : "CHE.FXREQ.007.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.007.G",
+    "version" : "1.0.0",
+    "name" : "Be able to provide feedback to the facility administrator/IT administrator for issues users notice through daily use of the tool and recommended solution improvements."
+  },
+  {
+    "id" : "CHE.FXREQ.008.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.008.A",
+    "version" : "1.0.0",
+    "name" : "Be able to gather unique identifier number/information pertaining to the client that includes personal information "
+  },
+  {
+    "id" : "CHE.FXREQ.008.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.008.B",
+    "version" : "1.0.0",
+    "name" : "Determine whether to manage client at the facility or refer"
+  },
+  {
+    "id" : "CHE.FXREQ.008.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.008.C",
+    "version" : "1.0.0",
+    "name" : "Provide a source to access accurate health information "
+  },
+  {
+    "id" : "CHE.FXREQ.008.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.008.D",
+    "version" : "1.0.0",
+    "name" : "Notify/send a reminder to the client's caregiver for the referral appointment "
+  },
+  {
+    "id" : "CHE.FXREQ.008.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.008.G",
+    "version" : "1.0.0",
+    "name" : "The solution to support multi-media, such as video, photos and audio"
+  },
+  {
+    "id" : "CHE.FXREQ.009.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.009.A",
+    "version" : "1.0.0",
+    "name" : "Search if the client is already in system (using at least two identifiers) (including information pertaining to the client's caregiver)"
+  },
+  {
+    "id" : "CHE.FXREQ.009.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.009.B",
+    "version" : "1.0.0",
+    "name" : "View a review of any past medical history previously entered"
+  },
+  {
+    "id" : "CHE.FXREQ.009.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.009.C",
+    "version" : "1.0.0",
+    "name" : "Receive information messages in a way that ensures patient confidentiality"
+  },
+  {
+    "id" : "CHE.FXREQ.009.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.009.D",
+    "version" : "1.0.0",
+    "name" : "Provide a list or roster of all infant/child clients"
+  },
+  {
+    "id" : "CHE.FXREQ.009.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.009.G",
+    "version" : "1.0.0",
+    "name" : "The solution to store data in an FHIR-compliant server"
+  },
+  {
+    "id" : "CHE.FXREQ.010.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.010.A",
+    "version" : "1.0.0",
+    "name" : "Display sufficient data to identify the client"
+  },
+  {
+    "id" : "CHE.FXREQ.010.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.010.C",
+    "version" : "1.0.0",
+    "name" : "Create a new referral request to the health facility"
+  },
+  {
+    "id" : "CHE.FXREQ.010.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.010.D",
+    "version" : "1.0.0",
+    "name" : "Provide tools to search, sort and filter the infant/child database"
+  },
+  {
+    "id" : "CHE.FXREQ.010.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.010.E",
+    "version" : "1.0.0",
+    "name" : "Display a schedule of available days"
+  },
+  {
+    "id" : "CHE.FXREQ.010.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.010.G",
+    "version" : "1.0.0",
+    "name" : "The solution to sync data in an FHIR-compliant server"
+  },
+  {
+    "id" : "CHE.FXREQ.011.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.A",
+    "version" : "1.0.0",
+    "name" : "Require a user to search if a client is already in the system before starting a new medical record entry"
+  },
+  {
+    "id" : "CHE.FXREQ.011.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.B",
+    "version" : "1.0.0",
+    "name" : "Indicate that the patient has arrived for the initial visit, scheduled contact or specific complaint (tasks will vary based on health worker roles)"
+  },
+  {
+    "id" : "CHE.FXREQ.011.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.C",
+    "version" : "1.0.0",
+    "name" : "Create a new follow-up request to the health facility"
+  },
+  {
+    "id" : "CHE.FXREQ.011.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.D",
+    "version" : "1.0.0",
+    "name" : "Provide/print/share information/clinical guidance to the client's caregiver as relevant "
+  },
+  {
+    "id" : "CHE.FXREQ.011.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.E",
+    "version" : "1.0.0",
+    "name" : "Indicate (based on the protocol) the preferred days for follow-up contact"
+  },
+  {
+    "id" : "CHE.FXREQ.011.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.011.G",
+    "version" : "1.0.0",
+    "name" : "The solution to represent data in an FHIR format that can be synced with client applications that use the FHIR international patient summary (IPS) on their mobile devices"
+  },
+  {
+    "id" : "CHE.FXREQ.012.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.A",
+    "version" : "1.0.0",
+    "name" : "Read client identification system (e.g. quick response [QR] code, barcode, fingerprint) and pull up client information"
+  },
+  {
+    "id" : "CHE.FXREQ.012.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.B",
+    "version" : "1.0.0",
+    "name" : "Be able to view the age of the client on the client record or after consultation with the caregiver to add the client's age to the record"
+  },
+  {
+    "id" : "CHE.FXREQ.012.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.C",
+    "version" : "1.0.0",
+    "name" : "Provide decision support as appropriate for users based on the data entered"
+  },
+  {
+    "id" : "CHE.FXREQ.012.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.D",
+    "version" : "1.0.0",
+    "name" : "Provide a way to share sources to access to accurate health information "
+  },
+  {
+    "id" : "CHE.FXREQ.012.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.E",
+    "version" : "1.0.0",
+    "name" : "Record identification and tracking information (such as mobile phone number) "
+  },
+  {
+    "id" : "CHE.FXREQ.012.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.012.G",
+    "version" : "1.0.0",
+    "name" : "To be able to add data and calculations as well as forms to the reference application, for localization (language support) and adaptation (addition of core health and data content), as well as calculations for decision-support and populating indicators"
+  },
+  {
+    "id" : "CHE.FXREQ.013.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.013.A",
+    "version" : "1.0.0",
+    "name" : "Provide sufficient data to rule out that this client is already in the system"
+  },
+  {
+    "id" : "CHE.FXREQ.013.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.013.B",
+    "version" : "1.0.0",
+    "name" : "Indicate if the age of the child is not known and be able to provide information as to how an age determination has been agreed"
+  },
+  {
+    "id" : "CHE.FXREQ.013.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.013.C",
+    "version" : "1.0.0",
+    "name" : "Suggest appropriate treatments/investigations based on findings"
+  },
+  {
+    "id" : "CHE.FXREQ.013.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.013.D",
+    "version" : "1.0.0",
+    "name" : "Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality"
+  },
+  {
+    "id" : "CHE.FXREQ.014.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.014.A",
+    "version" : "1.0.0",
+    "name" : "Add data that provide socio-demographic information about the client"
+  },
+  {
+    "id" : "CHE.FXREQ.014.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.014.B",
+    "version" : "1.0.0",
+    "name" : "Provide a standardized form for the entry of the clients profile"
+  },
+  {
+    "id" : "CHE.FXREQ.014.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.014.C",
+    "version" : "1.0.0",
+    "name" : "Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)"
+  },
+  {
+    "id" : "CHE.FXREQ.014.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.014.E",
+    "version" : "1.0.0",
+    "name" : "Be able to share my client’s health records with the follow-up facility "
+  },
+  {
+    "id" : "CHE.FXREQ.015.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.015.A",
+    "version" : "1.0.0",
+    "name" : "Edit data that provide socio-demographic information about the client"
+  },
+  {
+    "id" : "CHE.FXREQ.015.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.015.B",
+    "version" : "1.0.0",
+    "name" : "Provide a standardized form for the entry of clinical data"
+  },
+  {
+    "id" : "CHE.FXREQ.015.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.015.C",
+    "version" : "1.0.0",
+    "name" : "Provide decision support as appropriate for users based on the data entered"
+  },
+  {
+    "id" : "CHE.FXREQ.015.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.015.D",
+    "version" : "1.0.0",
+    "name" : "Be able to know the care my client received at the referral facility "
+  },
+  {
+    "id" : "CHE.FXREQ.015.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.015.E",
+    "version" : "1.0.0",
+    "name" : "Provide a list or roster of all clients in the schedule"
+  },
+  {
+    "id" : "CHE.FXREQ.016.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.016.A",
+    "version" : "1.0.0",
+    "name" : "Be able to edit the identification information (including information pertaining to the client's caregiver)"
+  },
+  {
+    "id" : "CHE.FXREQ.016.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.016.B",
+    "version" : "1.0.0",
+    "name" : "Provide real-time range checks and data integrity checks on data"
+  },
+  {
+    "id" : "CHE.FXREQ.016.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.016.C",
+    "version" : "1.0.0",
+    "name" : "Provide a source to access accurate health information "
+  },
+  {
+    "id" : "CHE.FXREQ.016.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.016.E",
+    "version" : "1.0.0",
+    "name" : "Provide a list of scheduled contacts and to allow for defaulters to be traced"
+  },
+  {
+    "id" : "CHE.FXREQ.017.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.017.A",
+    "version" : "1.0.0",
+    "name" : "Indicate mandatory fields that must be filled out for the registration to be valid"
+  },
+  {
+    "id" : "CHE.FXREQ.017.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.017.B",
+    "version" : "1.0.0",
+    "name" : "To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms "
+  },
+  {
+    "id" : "CHE.FXREQ.017.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.017.C",
+    "version" : "1.0.0",
+    "name" : "Receive information messages/alerts in a way that ensures patient confidentiality"
+  },
+  {
+    "id" : "CHE.FXREQ.017.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.017.E",
+    "version" : "1.0.0",
+    "name" : "Refer to Business Process A: Registration"
+  },
+  {
+    "id" : "CHE.FXREQ.018.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.018.A",
+    "version" : "1.0.0",
+    "name" : "Allow edits to fields on screen before information is committed"
+  },
+  {
+    "id" : "CHE.FXREQ.018.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.018.B",
+    "version" : "1.0.0",
+    "name" : "To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available"
+  },
+  {
+    "id" : "CHE.FXREQ.018.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.018.C",
+    "version" : "1.0.0",
+    "name" : "Allow the recording of key observations during the follow-up visit"
+  },
+  {
+    "id" : "CHE.FXREQ.018.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.018.E",
+    "version" : "1.0.0",
+    "name" : "Refer to Business Process A: Registration"
+  },
+  {
+    "id" : "CHE.FXREQ.019.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.019.A",
+    "version" : "1.0.0",
+    "name" : "Allow for a temporary identification in emergency situations when full identity is unknown"
+  },
+  {
+    "id" : "CHE.FXREQ.019.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.019.B",
+    "version" : "1.0.0",
+    "name" : "Highlight abnormal values"
+  },
+  {
+    "id" : "CHE.FXREQ.019.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.019.C",
+    "version" : "1.0.0",
+    "name" : "Create a new referral request to the health facility"
+  },
+  {
+    "id" : "CHE.FXREQ.020.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.020.A",
+    "version" : "1.0.0",
+    "name" : "Be able to enter new identification information (including information pertaining to the client's caregiver)"
+  },
+  {
+    "id" : "CHE.FXREQ.020.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.020.B",
+    "version" : "1.0.0",
+    "name" : "Provide a list of tests that the health worker can order for the client based on guidance for their age/symptoms/diagnosis"
+  },
+  {
+    "id" : "CHE.FXREQ.020.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.020.C",
+    "version" : "1.0.0",
+    "name" : "Create a new follow-up request to the health facility"
+  },
+  {
+    "id" : "CHE.FXREQ.021.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.021.A",
+    "version" : "1.0.0",
+    "name" : "Indicate mandatory fields that must be filled out for the registration to be valid"
+  },
+  {
+    "id" : "CHE.FXREQ.021.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.021.B",
+    "version" : "1.0.0",
+    "name" : "Provide information so that test results that have been ordered can be recorded"
+  },
+  {
+    "id" : "CHE.FXREQ.021.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.021.C",
+    "version" : "1.0.0",
+    "name" : "Be able to start a new Business Process B: Assess and classify the sick child if new symptoms have been identified with the client"
+  },
+  {
+    "id" : "CHE.FXREQ.021.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.021.E",
+    "version" : "1.0.0",
+    "name" : "Provide/print/share information/clinical guidance with the client's caregiver as relevant "
+  },
+  {
+    "id" : "CHE.FXREQ.022.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.022.A",
+    "version" : "1.0.0",
+    "name" : "Allow edits to fields on screen before information is committed"
+  },
+  {
+    "id" : "CHE.FXREQ.022.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.022.B",
+    "version" : "1.0.0",
+    "name" : "To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision"
+  },
+  {
+    "id" : "CHE.FXREQ.022.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.022.E",
+    "version" : "1.0.0",
+    "name" : "Provide a way to share sources for access accurate health information "
+  },
+  {
+    "id" : "CHE.FXREQ.023.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.023.A",
+    "version" : "1.0.0",
+    "name" : "Allow for a temporary identification in emergency situations when full identity is unknown"
+  },
+  {
+    "id" : "CHE.FXREQ.023.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.023.B",
+    "version" : "1.0.0",
+    "name" : "Provide a standardized form for the entry of the client's profile"
+  },
+  {
+    "id" : "CHE.FXREQ.023.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.023.E",
+    "version" : "1.0.0",
+    "name" : "Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality"
+  },
+  {
+    "id" : "CHE.FXREQ.024.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.024.A",
+    "version" : "1.0.0",
+    "name" : "Be able to input biometric information only (e.g. age, sex, respiration, weight, birthweight, height)"
+  },
+  {
+    "id" : "CHE.FXREQ.024.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.024.B",
+    "version" : "1.0.0",
+    "name" : "Provide a standardized form for the entry of clinical data"
+  },
+  {
+    "id" : "CHE.FXREQ.025.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.025.A",
+    "version" : "1.0.0",
+    "name" : "Record a time/date-stamped new contact (encounter)"
+  },
+  {
+    "id" : "CHE.FXREQ.025.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.025.B",
+    "version" : "1.0.0",
+    "name" : "Provide real-time range checks and data integrity checks on data"
+  },
+  {
+    "id" : "CHE.FXREQ.026.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.026.A",
+    "version" : "1.0.0",
+    "name" : "Identify in the client's record if this is a follow-up appointment or an initial visit"
+  },
+  {
+    "id" : "CHE.FXREQ.026.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.026.B",
+    "version" : "1.0.0",
+    "name" : "To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms "
+  },
+  {
+    "id" : "CHE.FXREQ.027.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.027.A",
+    "version" : "1.0.0",
+    "name" : "Provide the ability to \"check in\" for a scheduled contact"
+  },
+  {
+    "id" : "CHE.FXREQ.027.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.027.B",
+    "version" : "1.0.0",
+    "name" : "Highlight abnormal values"
+  },
+  {
+    "id" : "CHE.FXREQ.028.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.028.A",
+    "version" : "1.0.0",
+    "name" : "Identify the date of the last attended contact"
+  },
+  {
+    "id" : "CHE.FXREQ.028.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.028.B",
+    "version" : "1.0.0",
+    "name" : "Provide a list of tests that the health worker can order"
+  },
+  {
+    "id" : "CHE.FXREQ.029.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.029.A",
+    "version" : "1.0.0",
+    "name" : "Provide a list of scheduled contacts to allow for defaulters to be traced"
+  },
+  {
+    "id" : "CHE.FXREQ.029.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.029.B",
+    "version" : "1.0.0",
+    "name" : "Provide fields where test results that have been ordered can be recorded"
+  },
+  {
+    "id" : "CHE.FXREQ.030.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.030.A",
+    "version" : "1.0.0",
+    "name" : "Provide a list or roster of all infant/child clients due to arrive"
+  },
+  {
+    "id" : "CHE.FXREQ.030.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.030.B",
+    "version" : "1.0.0",
+    "name" : "To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision"
+  },
+  {
+    "id" : "CHE.FXREQ.031.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.FXREQ.031.A",
+    "version" : "1.0.0",
+    "name" : "Provide tools to search, sort and filter the infant/child client database"
+  },
+  {
+    "id" : "CHE.NFXNREQ.001",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.001",
+    "version" : "1.0.0",
+    "name" : "Provide password-protected access for authorized users"
+  },
+  {
+    "id" : "CHE.NFXNREQ.002",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.002",
+    "version" : "1.0.0",
+    "name" : "Provide a means to ensure confidentiality and privacy of personal health information"
+  },
+  {
+    "id" : "CHE.NFXNREQ.003",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.003",
+    "version" : "1.0.0",
+    "name" : "Provide ability for allowed users to view confidential data"
+  },
+  {
+    "id" : "CHE.NFXNREQ.004",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.004",
+    "version" : "1.0.0",
+    "name" : "Anonymize data that are exported from the system when required (also ability to export non-anonymized data from the system)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.005",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.005",
+    "version" : "1.0.0",
+    "name" : "Prevent remembering username and password"
+  },
+  {
+    "id" : "CHE.NFXNREQ.006",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.006",
+    "version" : "1.0.0",
+    "name" : "Automatically log out the user after specified time of inactivity"
+  },
+  {
+    "id" : "CHE.NFXNREQ.007",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.007",
+    "version" : "1.0.0",
+    "name" : "Provide encrypted communication between components"
+  },
+  {
+    "id" : "CHE.NFXNREQ.008",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.008",
+    "version" : "1.0.0",
+    "name" : "Notify the user to change their password the first time they log in"
+  },
+  {
+    "id" : "CHE.NFXNREQ.009",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.009",
+    "version" : "1.0.0",
+    "name" : "Adhere to complex password requirements"
+  },
+  {
+    "id" : "CHE.NFXNREQ.010",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.010",
+    "version" : "1.0.0",
+    "name" : "Provide a mechanism to securely change a user's password"
+  },
+  {
+    "id" : "CHE.NFXNREQ.011",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.011",
+    "version" : "1.0.0",
+    "name" : "Notify the user of a password change to their account"
+  },
+  {
+    "id" : "CHE.NFXNREQ.012",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.012",
+    "version" : "1.0.0",
+    "name" : "Reset a user's password in a secure manner"
+  },
+  {
+    "id" : "CHE.NFXNREQ.013",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.013",
+    "version" : "1.0.0",
+    "name" : "Lock a user out after a specified number of wrong password attempts"
+  },
+  {
+    "id" : "CHE.NFXNREQ.014",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.014",
+    "version" : "1.0.0",
+    "name" : "Notify a user if their account is locked due to wrong password attempts"
+  },
+  {
+    "id" : "CHE.NFXNREQ.015",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.015",
+    "version" : "1.0.0",
+    "name" : "Provide role-based access to the system"
+  },
+  {
+    "id" : "CHE.NFXNREQ.016",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.016",
+    "version" : "1.0.0",
+    "name" : "Log system log-ins and log-outs"
+  },
+  {
+    "id" : "CHE.NFXNREQ.017",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.017",
+    "version" : "1.0.0",
+    "name" : "Record all authentication violations"
+  },
+  {
+    "id" : "CHE.NFXNREQ.018",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.018",
+    "version" : "1.0.0",
+    "name" : "Log all activities performed by the user, including date and time stamp"
+  },
+  {
+    "id" : "CHE.NFXNREQ.019",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.019",
+    "version" : "1.0.0",
+    "name" : "Log access to views of individual client records"
+  },
+  {
+    "id" : "CHE.NFXNREQ.020",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.020",
+    "version" : "1.0.0",
+    "name" : "Log access to data summaries, reports, analysis and visualization features"
+  },
+  {
+    "id" : "CHE.NFXNREQ.021",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.021",
+    "version" : "1.0.0",
+    "name" : "Log exchange of data with other systems"
+  },
+  {
+    "id" : "CHE.NFXNREQ.022",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.022",
+    "version" : "1.0.0",
+    "name" : "Generate analysis of the usage of different system features and reports"
+  },
+  {
+    "id" : "CHE.NFXNREQ.023",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.023",
+    "version" : "1.0.0",
+    "name" : "Log all data and system errors"
+  },
+  {
+    "id" : "CHE.NFXNREQ.024",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.024",
+    "version" : "1.0.0",
+    "name" : "Allow user with permission to create a new user and temporary password"
+  },
+  {
+    "id" : "CHE.NFXNREQ.025",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.025",
+    "version" : "1.0.0",
+    "name" : "Provide role-based access"
+  },
+  {
+    "id" : "CHE.NFXNREQ.026",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.026",
+    "version" : "1.0.0",
+    "name" : "Allow roles to be associated with specific geographical areas and/or health facilities (with the ability to choose which facility to log into as the user may work across several facilities)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.027",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.027",
+    "version" : "1.0.0",
+    "name" : "Allow cascading user management and assignment of roles"
+  },
+  {
+    "id" : "CHE.NFXNREQ.028",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.028",
+    "version" : "1.0.0",
+    "name" : "Allow user to change the user's own password"
+  },
+  {
+    "id" : "CHE.NFXNREQ.029",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.029",
+    "version" : "1.0.0",
+    "name" : "Allow users to enable and disable another user"
+  },
+  {
+    "id" : "CHE.NFXNREQ.030",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.030",
+    "version" : "1.0.0",
+    "name" : "Allow admin user to request password reset"
+  },
+  {
+    "id" : "CHE.NFXNREQ.031",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.031",
+    "version" : "1.0.0",
+    "name" : "Notify the user to regularly change the user's password"
+  },
+  {
+    "id" : "CHE.NFXNREQ.032",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.032",
+    "version" : "1.0.0",
+    "name" : "Allow each user to be assigned to one or more roles"
+  },
+  {
+    "id" : "CHE.NFXNREQ.033",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.033",
+    "version" : "1.0.0",
+    "name" : "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"
+  },
+  {
+    "id" : "CHE.NFXNREQ.034",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.034",
+    "version" : "1.0.0",
+    "name" : "Provide a unique version number for each revision"
+  },
+  {
+    "id" : "CHE.NFXNREQ.035",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.035",
+    "version" : "1.0.0",
+    "name" : "Enable earlier versions of a record to be recoverable"
+  },
+  {
+    "id" : "CHE.NFXNREQ.036",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.036",
+    "version" : "1.0.0",
+    "name" : "Enable deployment in an environment subject to power loss"
+  },
+  {
+    "id" : "CHE.NFXNREQ.037",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.037",
+    "version" : "1.0.0",
+    "name" : "Work in an environment that is subject to loss of connectivity"
+  },
+  {
+    "id" : "CHE.NFXNREQ.038",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.038",
+    "version" : "1.0.0",
+    "name" : "Generate IDs that are unique across different installations or sites"
+  },
+  {
+    "id" : "CHE.NFXNREQ.039",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.039",
+    "version" : "1.0.0",
+    "name" : "Report version number when saving data to the database"
+  },
+  {
+    "id" : "CHE.NFXNREQ.040",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.040",
+    "version" : "1.0.0",
+    "name" : "Be designed to be flexible enough to accommodate for the necessary changes in the future"
+  },
+  {
+    "id" : "CHE.NFXNREQ.041",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.041",
+    "version" : "1.0.0",
+    "name" : "Allow for offline and online functionality"
+  },
+  {
+    "id" : "CHE.NFXNREQ.042",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.042",
+    "version" : "1.0.0",
+    "name" : "Show the number of records that are not yet synchronized"
+  },
+  {
+    "id" : "CHE.NFXNREQ.043",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.043",
+    "version" : "1.0.0",
+    "name" : "Have ability to easily back up information"
+  },
+  {
+    "id" : "CHE.NFXNREQ.044",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.044",
+    "version" : "1.0.0",
+    "name" : "Warn user if no valid back-up for more than a predefined number of days"
+  },
+  {
+    "id" : "CHE.NFXNREQ.045",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.045",
+    "version" : "1.0.0",
+    "name" : "Must have the ability to store images or other unstructured data"
+  },
+  {
+    "id" : "CHE.NFXNREQ.046",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.046",
+    "version" : "1.0.0",
+    "name" : "Scalable to accommodate new demands"
+  },
+  {
+    "id" : "CHE.NFXNREQ.047",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.047",
+    "version" : "1.0.0",
+    "name" : "Be able to accommodate at least 3000 health facilities"
+  },
+  {
+    "id" : "CHE.NFXNREQ.048",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.048",
+    "version" : "1.0.0",
+    "name" : "Be able to accommodate at least 5000 concurrent users"
+  },
+  {
+    "id" : "CHE.NFXNREQ.049",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.049",
+    "version" : "1.0.0",
+    "name" : "Be able to accommodate more than [x number of] concurrent users"
+  },
+  {
+    "id" : "CHE.NFXNREQ.050",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.050",
+    "version" : "1.0.0",
+    "name" : "Be user-friendly for people with low computer literacy"
+  },
+  {
+    "id" : "CHE.NFXNREQ.051",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.051",
+    "version" : "1.0.0",
+    "name" : "Provide informative error messages and tooltips"
+  },
+  {
+    "id" : "CHE.NFXNREQ.052",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.052",
+    "version" : "1.0.0",
+    "name" : "Alert the user when navigating away from the form without saving"
+  },
+  {
+    "id" : "CHE.NFXNREQ.053",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.053",
+    "version" : "1.0.0",
+    "name" : "Support real-time data entry validation and feedback to prevent data entry errors from being recorded"
+  },
+  {
+    "id" : "CHE.NFXNREQ.054",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.054",
+    "version" : "1.0.0",
+    "name" : "Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes"
+  },
+  {
+    "id" : "CHE.NFXNREQ.055",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.055",
+    "version" : "1.0.0",
+    "name" : "Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic"
+  },
+  {
+    "id" : "CHE.NFXNREQ.056",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.056",
+    "version" : "1.0.0",
+    "name" : "Use industry-standard user interface practices and apply them in a consistent manner throughout the system"
+  },
+  {
+    "id" : "CHE.NFXNREQ.057",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.057",
+    "version" : "1.0.0",
+    "name" : "Easy to learn and intuitive to enable user to navigate between pages"
+  },
+  {
+    "id" : "CHE.NFXNREQ.058",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.058",
+    "version" : "1.0.0",
+    "name" : "Provide guidance to the users to better support clinical guidelines and best clinical practices"
+  },
+  {
+    "id" : "CHE.NFXNREQ.059",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.059",
+    "version" : "1.0.0",
+    "name" : "Be reliable and robust (minimize the number of system crashes)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.060",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.060",
+    "version" : "1.0.0",
+    "name" : "Adjust display to fit small screens (such as mobile phones)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.061",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.061",
+    "version" : "1.0.0",
+    "name" : "Configure the system centrally"
+  },
+  {
+    "id" : "CHE.NFXNREQ.062",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.062",
+    "version" : "1.0.0",
+    "name" : "Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language [CQL] + Fast Health Interoperability Resources [FHIR])"
+  },
+  {
+    "id" : "CHE.NFXNREQ.063",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.063",
+    "version" : "1.0.0",
+    "name" : "Configure error messages"
+  },
+  {
+    "id" : "CHE.NFXNREQ.064",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.064",
+    "version" : "1.0.0",
+    "name" : "Configure workflows and business rules to accommodate differences between facilities"
+  },
+  {
+    "id" : "CHE.NFXNREQ.065",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.065",
+    "version" : "1.0.0",
+    "name" : "Communicate with external systems through mediators"
+  },
+  {
+    "id" : "CHE.NFXNREQ.066",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.066",
+    "version" : "1.0.0",
+    "name" : "Provide access to data through application programming interfaces to interface with other SMART guideline reference App solutions, incumbent solutions (e.g. registration systems) and reporting tools"
+  },
+  {
+    "id" : "CHE.NFXNREQ.067",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.067",
+    "version" : "1.0.0",
+    "name" : "The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.068",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.068",
+    "version" : "1.0.0",
+    "name" : "Be interoperable with external systems through mediators"
+  },
+  {
+    "id" : "CHE.NFXNREQ.069",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.069",
+    "version" : "1.0.0",
+    "name" : "Link with insurance systems to verify eligibility and submit claims"
+  },
+  {
+    "id" : "CHE.NFXNREQ.070",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.070",
+    "version" : "1.0.0",
+    "name" : "Exchange data with other approved systems"
+  },
+  {
+    "id" : "CHE.NFXNREQ.071",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.071",
+    "version" : "1.0.0",
+    "name" : "Accept data from multiple input methods including paper and geocoding (global positioning system)"
+  },
+  {
+    "id" : "CHE.NFXNREQ.072",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.072",
+    "version" : "1.0.0",
+    "name" : "Allow for data exchange and efficient synchronization across multiple facilities and points of service when the Internet is available, even when it is intermittent and slow"
+  },
+  {
+    "id" : "CHE.NFXNREQ.073",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.073",
+    "version" : "1.0.0",
+    "name" : "Enable use via a Web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles"
+  },
+  {
+    "id" : "CHE.NFXNREQ.074",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.074",
+    "version" : "1.0.0",
+    "name" : "Ability to work offline and in low-bandwidth areas"
+  },
+  {
+    "id" : "CHE.NFXNREQ.075",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-ccc/Requirements/CHE.NFXNREQ.075",
+    "version" : "1.0.0",
+    "name" : "Provision of design, build, technical system and architecture, and testing documentation for future support and further configuration of the solution for other health intervention initiatives"
+  },
+  {
+    "id" : "FXREQBusinessProcesses",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/dak-ccc/ValueSet/FXREQBusinessProcesses",
+    "version" : "1.0.0",
+    "name" : "FXREQBusinessProcesses"
+  },
+  {
+    "id" : "FXREQCategories",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/dak-ccc/ValueSet/FXREQCategories",
+    "version" : "1.0.0",
+    "name" : "FXREQCategories"
+  }
+]

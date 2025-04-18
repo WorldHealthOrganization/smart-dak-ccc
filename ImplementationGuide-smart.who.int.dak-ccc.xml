@@ -1,0 +1,2974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="smart.who.int.dak-ccc"/>
+  <meta>
+    <profile value="SMARTImplementationGuide"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-ccc</b></p><a name="smart.who.int.dak-ccc"> </a><a name="hcsmart.who.int.dak-ccc"> </a><a name="smart.who.int.dak-ccc-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <code>SMARTImplementationGuide</code></p></div><h2>DakCcc</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc</pre><div><p>CCC DAK</p>
+</div></div>
+  </text>
+  <url value="http://smart.who.int/dak-ccc/ImplementationGuide/smart.who.int.dak-ccc"/>
+  <version value="1.0.0"/>
+  <name value="DakCcc"/>
+  <title value="SMART DAK CCC"/>
+  <status value="active"/>
+  <date value="2025-04-18T02:23:52+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="CCC DAK"/>
+  <packageId value="smart.who.int.dak-ccc"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.3.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_base">
+    <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
+    <packageId value="smart.who.int.base"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/dak-ccc/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="release"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/dak-ccc/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.074"/>
+      </reference>
+      <name value="Ability to work offline and in low-bandwidth areas"/>
+      <description value="*Category*: System requirements – hardware and connectivity&#xA;Ability to work offline and in low-bandwidth areas"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.071"/>
+      </reference>
+      <name value="Accept data from multiple input methods including paper and geocoding (global positioning system)"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Accept data from multiple input methods including paper and geocoding (global positioning system)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.014.A"/>
+      </reference>
+      <name value="Add data that provide socio-demographic information about the client"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Add data that provide socio-demographic information about the client&#xA;&#xA;so that&#xA;&#xA;&gt;I can use the data to for analysis, forecasting and planning"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.009"/>
+      </reference>
+      <name value="Adhere to complex password requirements"/>
+      <description value="*Category*: Security – authentication&#xA;Adhere to complex password requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.060"/>
+      </reference>
+      <name value="Adjust display to fit small screens (such as mobile phones)"/>
+      <description value="*Category*: System requirements – usability&#xA;Adjust display to fit small screens (such as mobile phones)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.052"/>
+      </reference>
+      <name value="Alert the user when navigating away from the form without saving"/>
+      <description value="*Category*: System requirements – usability&#xA;Alert the user when navigating away from the form without saving"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/allusers"/>
+      </reference>
+      <name value="All Users"/>
+      <description value="Actor All Users from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.030"/>
+      </reference>
+      <name value="Allow admin user to request password reset"/>
+      <description value="*Category*: Security – user management&#xA;Allow admin user to request password reset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.027"/>
+      </reference>
+      <name value="Allow cascading user management and assignment of roles"/>
+      <description value="*Category*: Security – user management&#xA;Allow cascading user management and assignment of roles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.032"/>
+      </reference>
+      <name value="Allow each user to be assigned to one or more roles"/>
+      <description value="*Category*: Security – user management&#xA;Allow each user to be assigned to one or more roles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.018.A"/>
+      </reference>
+      <name value="Allow edits to fields on screen before information is committed"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Allow edits to fields on screen before information is committed&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure information has been checked before submission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.022.A"/>
+      </reference>
+      <name value="Allow edits to fields on screen before information is committed"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Allow edits to fields on screen before information is committed&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure information has been checked before submission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.019.A"/>
+      </reference>
+      <name value="Allow for a temporary identification in emergency situations when full identity is unknown"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Allow for a temporary identification in emergency situations when full identity is unknown&#xA;&#xA;so that&#xA;&#xA;&gt;I can proceed with registration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.023.A"/>
+      </reference>
+      <name value="Allow for a temporary identification in emergency situations when full identity is unknown"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Allow for a temporary identification in emergency situations when full identity is unknown&#xA;&#xA;so that&#xA;&#xA;&gt;I can proceed with registration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.072"/>
+      </reference>
+      <name value="Allow for data exchange and efficient synchronization across multiple facilities and points of service when the Internet is available, even when it is intermittent and slow"/>
+      <description value="*Category*: System requirements – hardware and connectivity&#xA;Allow for data exchange and efficient synchronization across multiple facilities and points of service when the Internet is available, even when it is intermittent and slow"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.041"/>
+      </reference>
+      <name value="Allow for offline and online functionality"/>
+      <description value="*Category*: System requirements – general&#xA;Allow for offline and online functionality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.026"/>
+      </reference>
+      <name value="Allow roles to be associated with specific geographical areas and/or health facilities (with the ability to choose which facility to log into as the user may work across several facilities)"/>
+      <description value="*Category*: Security – user management&#xA;Allow roles to be associated with specific geographical areas and/or health facilities (with the ability to choose which facility to log into as the user may work across several facilities)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.002.C"/>
+      </reference>
+      <name value="Allow the recording of key observations during a visit and a space to make general notes about the consultation and treatment provided"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Allow the recording of key observations during a visit and a space to make general notes about the consultation and treatment provided&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure that the client's health information is recorded and kept up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.018.C"/>
+      </reference>
+      <name value="Allow the recording of key observations during the follow-up visit"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Allow the recording of key observations during the follow-up visit&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client's health information is recorded and kept up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.028"/>
+      </reference>
+      <name value="Allow user to change the user's own password"/>
+      <description value="*Category*: Security – user management&#xA;Allow user to change the user's own password"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.024"/>
+      </reference>
+      <name value="Allow user with permission to create a new user and temporary password"/>
+      <description value="*Category*: Security – user management&#xA;Allow user with permission to create a new user and temporary password"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.029"/>
+      </reference>
+      <name value="Allow users to enable and disable another user"/>
+      <description value="*Category*: Security – user management&#xA;Allow users to enable and disable another user"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.004"/>
+      </reference>
+      <name value="Anonymize data that are exported from the system when required (also ability to export non-anonymized data from the system)"/>
+      <description value="*Category*: Security – confidentiality&#xA;Anonymize data that are exported from the system when required (also ability to export non-anonymized data from the system)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/automatedsystemnotification"/>
+      </reference>
+      <name value="Automated system notification"/>
+      <description value="Actor Automated system notification from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.006"/>
+      </reference>
+      <name value="Automatically log out the user after specified time of inactivity"/>
+      <description value="*Category*: Security – confidentiality&#xA;Automatically log out the user after specified time of inactivity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.047"/>
+      </reference>
+      <name value="Be able to accommodate at least 3000 health facilities"/>
+      <description value="*Category*: System requirements – scalability&#xA;Be able to accommodate at least 3000 health facilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.048"/>
+      </reference>
+      <name value="Be able to accommodate at least 5000 concurrent users"/>
+      <description value="*Category*: System requirements – scalability&#xA;Be able to accommodate at least 5000 concurrent users"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.049"/>
+      </reference>
+      <name value="Be able to accommodate more than [x number of] concurrent users"/>
+      <description value="*Category*: System requirements – scalability&#xA;Be able to accommodate more than [x number of] concurrent users"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.006.G"/>
+      </reference>
+      <name value="Be able to build the type of solution suitable for my country/setting using the correct modules according to preferences"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Be able to build the type of solution suitable for my country/setting using the correct modules according to preferences&#xA;&#xA;so that&#xA;&#xA;&gt;I can build the solution as closely as possible to the country/setting according to regulations within the country and according to our specific solution requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.G"/>
+      </reference>
+      <name value="Be able to differentiate between simple and complex care provision requirements"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Be able to differentiate between simple and complex care provision requirements&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide the correct level of detail for the user type (e.g. doctor/specialist vs nurse health workers)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.016.A"/>
+      </reference>
+      <name value="Be able to edit the identification information (including information pertaining to the client's caregiver)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to edit the identification information (including information pertaining to the client's caregiver)&#xA;&#xA;so that&#xA;&#xA;&gt;I can update existing client information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.020.A"/>
+      </reference>
+      <name value="Be able to enter new identification information (including information pertaining to the client's caregiver)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to enter new identification information (including information pertaining to the client's caregiver)&#xA;&#xA;so that&#xA;&#xA;&gt;I can enter new client information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.004.D"/>
+      </reference>
+      <name value="Be able to find out where a treatment method may be available nearby "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Be able to find out where a treatment method may be available nearby &#xA;&#xA;so that&#xA;&#xA;&gt;I can refer my client to another facility to receive the appropriate services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.006.A"/>
+      </reference>
+      <name value="Be able to gather the client's caregiver basic information (if required)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to gather the client's caregiver basic information (if required)&#xA;&#xA;so that&#xA;&#xA;&gt;I can track and follow the name of the client's caregiver for the purposes of engagement during the consultation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.007.A"/>
+      </reference>
+      <name value="Be able to gather unique identifier number/information pertaining to the client that does not include personal information "/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to gather unique identifier number/information pertaining to the client that does not include personal information &#xA;&#xA;so that&#xA;&#xA;&gt;I do not have to manage personal information management regulations/laws"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.008.A"/>
+      </reference>
+      <name value="Be able to gather unique identifier number/information pertaining to the client that includes personal information "/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to gather unique identifier number/information pertaining to the client that includes personal information &#xA;&#xA;so that&#xA;&#xA;&gt;I can identify the client using personal information within personal information management regulations/laws"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.024.A"/>
+      </reference>
+      <name value="Be able to input biometric information only (e.g. age, sex, respiration, weight, birthweight, height)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Be able to input biometric information only (e.g. age, sex, respiration, weight, birthweight, height)&#xA;&#xA;so that&#xA;&#xA;&gt;I can proceed without using personal information but still maintain medical information via a unique identifier number (also useful in emergency scenarios)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.015.D"/>
+      </reference>
+      <name value="Be able to know the care my client received at the referral facility "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Be able to know the care my client received at the referral facility &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate care if my client comes back to my facility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.007.G"/>
+      </reference>
+      <name value="Be able to provide feedback to the facility administrator/IT administrator for issues users notice through daily use of the tool and recommended solution improvements."/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Be able to provide feedback to the facility administrator/IT administrator for issues users notice through daily use of the tool and recommended solution improvements.&#xA;&#xA;so that&#xA;&#xA;&gt;Future solution development can be improved for the users"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.003.F"/>
+      </reference>
+      <name value="Be able to run calculations on data to populate indicators or reports on my own performance and service delivery – calculations on data should be conducted with Fast Health Interoperability Resources (FHIR) and contextual query language"/>
+      <description value="*Business process* (F) Aggregate Reporting:&#xA;As a &lt;a href=&quot;ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html&quot;&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:&#xA;&gt;Be able to run calculations on data to populate indicators or reports on my own performance and service delivery – calculations on data should be conducted with Fast Health Interoperability Resources (FHIR) and contextual query language&#xA;&#xA;so that&#xA;&#xA;&gt;I can understand trends and challenges and track my own performance over time "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.014.E"/>
+      </reference>
+      <name value="Be able to share my client’s health records with the follow-up facility "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Be able to share my client’s health records with the follow-up facility &#xA;&#xA;so that&#xA;&#xA;&gt;They can provide the care my client needs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.007.D"/>
+      </reference>
+      <name value="Be able to share my client’s health records with the referral facility "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Be able to share my client’s health records with the referral facility &#xA;&#xA;so that&#xA;&#xA;&gt;They can provide the health care my client needs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.C"/>
+      </reference>
+      <name value="Be able to show improvements or decline of a client's health based on previous/current consultations including before and after treatment"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Be able to show improvements or decline of a client's health based on previous/current consultations including before and after treatment&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.021.C"/>
+      </reference>
+      <name value="Be able to start a new Business Process B: Assess and classify the sick child if new symptoms have been identified with the client"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Be able to start a new Business Process B: Assess and classify the sick child if new symptoms have been identified with the client&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.004.G"/>
+      </reference>
+      <name value="Be able to track treatments via reference numbers so that these can be updated as required and can be used to create &quot;treatment modules&quot; pertinent to a country or emergency setting"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Be able to track treatments via reference numbers so that these can be updated as required and can be used to create \&quot;treatment modules\&quot; pertinent to a country or emergency setting&#xA;&#xA;so that&#xA;&#xA;&gt;Countries can implement the correct treatment module for their regulations and emergency setting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.002.F"/>
+      </reference>
+      <name value="Be able to view data on my own performance and service delivery  "/>
+      <description value="*Business process* (F) Aggregate Reporting:&#xA;As a &lt;a href=&quot;ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html&quot;&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:&#xA;&gt;Be able to view data on my own performance and service delivery  &#xA;&#xA;so that&#xA;&#xA;&gt;I can understand trends and challenges and track my own performance over time "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.B"/>
+      </reference>
+      <name value="Be able to view the age of the client on the client record or after consultation with the caregiver to add the client's age to the record"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Be able to view the age of the client on the client record or after consultation with the caregiver to add the client's age to the record&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services for the client's problems based on their age"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.040"/>
+      </reference>
+      <name value="Be designed to be flexible enough to accommodate for the necessary changes in the future"/>
+      <description value="*Category*: System requirements – general&#xA;Be designed to be flexible enough to accommodate for the necessary changes in the future"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.068"/>
+      </reference>
+      <name value="Be interoperable with external systems through mediators"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Be interoperable with external systems through mediators"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.059"/>
+      </reference>
+      <name value="Be reliable and robust (minimize the number of system crashes)"/>
+      <description value="*Category*: System requirements – usability&#xA;Be reliable and robust (minimize the number of system crashes)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.050"/>
+      </reference>
+      <name value="Be user-friendly for people with low computer literacy"/>
+      <description value="*Category*: System requirements – usability&#xA;Be user-friendly for people with low computer literacy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.A"/>
+      </reference>
+      <name value="Bypass the standard flow at any point if an urgent case is identified – Refer to Business Process G. Triage and assessment"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Bypass the standard flow at any point if an urgent case is identified – Refer to Business Process G. Triage and assessment&#xA;&#xA;so that&#xA;&#xA;&gt;The child/infant can receive immediate attention – Refer to Business Process G. Triage and assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.065"/>
+      </reference>
+      <name value="Communicate with external systems through mediators"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Communicate with external systems through mediators"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/communityhealthworker"/>
+      </reference>
+      <name value="Community health worker"/>
+      <description value="Actor Community health worker from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.062"/>
+      </reference>
+      <name value="Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language [CQL] + Fast Health Interoperability Resources [FHIR])"/>
+      <description value="*Category*: System requirements – configuration&#xA;Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language [CQL] + Fast Health Interoperability Resources [FHIR])"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.063"/>
+      </reference>
+      <name value="Configure error messages"/>
+      <description value="*Category*: System requirements – configuration&#xA;Configure error messages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.061"/>
+      </reference>
+      <name value="Configure the system centrally"/>
+      <description value="*Category*: System requirements – configuration&#xA;Configure the system centrally"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.064"/>
+      </reference>
+      <name value="Configure workflows and business rules to accommodate differences between facilities"/>
+      <description value="*Category*: System requirements – configuration&#xA;Configure workflows and business rules to accommodate differences between facilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.C"/>
+      </reference>
+      <name value="Create a new follow-up request to the health facility"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Create a new follow-up request to the health facility&#xA;&#xA;so that&#xA;&#xA;&gt;I can refer my client so that they receive the appropriate services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.020.C"/>
+      </reference>
+      <name value="Create a new follow-up request to the health facility"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Create a new follow-up request to the health facility&#xA;&#xA;so that&#xA;&#xA;&gt;I can refer my client so that they receive the appropriate services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.010.C"/>
+      </reference>
+      <name value="Create a new referral request to the health facility"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Create a new referral request to the health facility&#xA;&#xA;so that&#xA;&#xA;&gt;I can refer my client so that they receive the appropriate services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.019.C"/>
+      </reference>
+      <name value="Create a new referral request to the health facility"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Create a new referral request to the health facility&#xA;&#xA;so that&#xA;&#xA;&gt;I can refer my client so that they receive the appropriate services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.008.B"/>
+      </reference>
+      <name value="Determine whether to manage client at the facility or refer"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Determine whether to manage client at the facility or refer&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client receives appropriate services as quickly as possible"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.002.E"/>
+      </reference>
+      <name value="Display a schedule of available days"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Display a schedule of available days&#xA;&#xA;so that&#xA;&#xA;&gt;I can notify client when to return for subsequent contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.010.E"/>
+      </reference>
+      <name value="Display a schedule of available days"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Display a schedule of available days&#xA;&#xA;so that&#xA;&#xA;&gt;I can notify the client when to return for subsequent contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.010.A"/>
+      </reference>
+      <name value="Display sufficient data to identify the client"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Display sufficient data to identify the client&#xA;&#xA;so that&#xA;&#xA;&gt;I can confirm that it is the correct client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.E"/>
+      </reference>
+      <name value="Display the number of existing contacts per day (to allow for balancing)"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Display the number of existing contacts per day (to allow for balancing)&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage and follow up on clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.057"/>
+      </reference>
+      <name value="Easy to learn and intuitive to enable user to navigate between pages"/>
+      <description value="*Category*: System requirements – usability&#xA;Easy to learn and intuitive to enable user to navigate between pages"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.015.A"/>
+      </reference>
+      <name value="Edit data that provide socio-demographic information about the client"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Edit data that provide socio-demographic information about the client&#xA;&#xA;so that&#xA;&#xA;&gt;I can use the data to for analysis, forecasting and planning"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.036"/>
+      </reference>
+      <name value="Enable deployment in an environment subject to power loss"/>
+      <description value="*Category*: System requirements – general&#xA;Enable deployment in an environment subject to power loss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.035"/>
+      </reference>
+      <name value="Enable earlier versions of a record to be recoverable"/>
+      <description value="*Category*: System requirements – general&#xA;Enable earlier versions of a record to be recoverable"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.073"/>
+      </reference>
+      <name value="Enable use via a Web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles"/>
+      <description value="*Category*: System requirements – hardware and connectivity&#xA;Enable use via a Web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.070"/>
+      </reference>
+      <name value="Exchange data with other approved systems"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Exchange data with other approved systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/facilityhealthworker"/>
+      </reference>
+      <name value="Facility health worker"/>
+      <description value="Actor Facility health worker from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/facilitystafffacilitystaffinchargedistricthealthofficerstaff"/>
+      </reference>
+      <name value="Facility staff, facility staff in charge, district health officer/staff"/>
+      <description value="Actor Facility staff, facility staff in charge, district health officer/staff from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.D"/>
+      </reference>
+      <name value="Find facilities that can provide the service or treatment method that mine cannot provide. "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Find facilities that can provide the service or treatment method that mine cannot provide. &#xA;&#xA;so that&#xA;&#xA;&gt;The client does not travel to a facility that cannot help them"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FXREQCategories"/>
+      </reference>
+      <name value="Functional Requirement Categories"/>
+      <description value="Value Set for Functional Requirements Categories. Autogenerated from DAK artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/FXREQCategories"/>
+      </reference>
+      <name value="Functional Requirement Categories"/>
+      <description value="CodeSystem for Functional Requirements Categories.  Autogenerated from DAK artifacts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FXREQBusinessProcesses"/>
+      </reference>
+      <name value="Functional Requirements - Business Process"/>
+      <description value="ValueSet of Functional Requirements - Business Process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/FXREQBusinessProcesses"/>
+      </reference>
+      <name value="Functional Requirements - Business Process"/>
+      <description value="ValueSet of Functional Requirements - Business Process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.022"/>
+      </reference>
+      <name value="Generate analysis of the usage of different system features and reports"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Generate analysis of the usage of different system features and reports"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.038"/>
+      </reference>
+      <name value="Generate IDs that are unique across different installations or sites"/>
+      <description value="*Category*: System requirements – general&#xA;Generate IDs that are unique across different installations or sites"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.043"/>
+      </reference>
+      <name value="Have ability to easily back up information"/>
+      <description value="*Category*: System requirements – general&#xA;Have ability to easily back up information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/healthworker"/>
+      </reference>
+      <name value="Health worker"/>
+      <description value="Actor Health worker from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/healthworkerandneonateinfantchildcaregiver"/>
+      </reference>
+      <name value="Health worker and neonate/infant/child (caregiver)"/>
+      <description value="Actor Health worker and neonate/infant/child (caregiver) from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/healthworkerorclerk"/>
+      </reference>
+      <name value="Health worker or clerk"/>
+      <description value="Actor Health worker or clerk from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.019.B"/>
+      </reference>
+      <name value="Highlight abnormal values"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Highlight abnormal values&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify critical health issues or errors (if a data entry issue)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.027.B"/>
+      </reference>
+      <name value="Highlight abnormal values"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Highlight abnormal values&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify critical health issues or errors (if a data entry issue)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.026.A"/>
+      </reference>
+      <name value="Identify in the client's record if this is a follow-up appointment or an initial visit"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Identify in the client's record if this is a follow-up appointment or an initial visit&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify which process to follow and view the client's previous problems that required a follow-up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.007.B"/>
+      </reference>
+      <name value="Identify key symptoms and signs that may require medical attention"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Identify key symptoms and signs that may require medical attention&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide the appropriate services as quickly as possible"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.028.A"/>
+      </reference>
+      <name value="Identify the date of the last attended contact"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Identify the date of the last attended contact&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure client is receiving services according to the recommended contact schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.003.E"/>
+      </reference>
+      <name value="Indicate (based on protocol) the preferred days for follow-up contact"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Indicate (based on protocol) the preferred days for follow-up contact&#xA;&#xA;so that&#xA;&#xA;&gt;The client receives services according to the recommended contact schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.E"/>
+      </reference>
+      <name value="Indicate (based on the protocol) the preferred days for follow-up contact"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Indicate (based on the protocol) the preferred days for follow-up contact&#xA;&#xA;so that&#xA;&#xA;&gt;The client receives services according to recommended contact schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.013.B"/>
+      </reference>
+      <name value="Indicate if the age of the child is not known and be able to provide information as to how an age determination has been agreed"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Indicate if the age of the child is not known and be able to provide information as to how an age determination has been agreed&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.017.A"/>
+      </reference>
+      <name value="Indicate mandatory fields that must be filled out for the registration to be valid"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Indicate mandatory fields that must be filled out for the registration to be valid&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure all necessary information has been completed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.021.A"/>
+      </reference>
+      <name value="Indicate mandatory fields that must be filled out for the registration to be valid"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Indicate mandatory fields that must be filled out for the registration to be valid&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure all necessary information has been completed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.B"/>
+      </reference>
+      <name value="Indicate that the patient has arrived for the initial visit, scheduled contact or specific complaint (tasks will vary based on health worker roles)"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Indicate that the patient has arrived for the initial visit, scheduled contact or specific complaint (tasks will vary based on health worker roles)&#xA;&#xA;so that&#xA;&#xA;&gt;I can know what services to provide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.069"/>
+      </reference>
+      <name value="Link with insurance systems to verify eligibility and submit claims"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Link with insurance systems to verify eligibility and submit claims"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.013"/>
+      </reference>
+      <name value="Lock a user out after a specified number of wrong password attempts"/>
+      <description value="*Category*: Security – authentication&#xA;Lock a user out after a specified number of wrong password attempts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.020"/>
+      </reference>
+      <name value="Log access to data summaries, reports, analysis and visualization features"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log access to data summaries, reports, analysis and visualization features"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.019"/>
+      </reference>
+      <name value="Log access to views of individual client records"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log access to views of individual client records"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.018"/>
+      </reference>
+      <name value="Log all activities performed by the user, including date and time stamp"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log all activities performed by the user, including date and time stamp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.023"/>
+      </reference>
+      <name value="Log all data and system errors"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log all data and system errors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.021"/>
+      </reference>
+      <name value="Log exchange of data with other systems"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log exchange of data with other systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.016"/>
+      </reference>
+      <name value="Log system log-ins and log-outs"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Log system log-ins and log-outs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.003.G"/>
+      </reference>
+      <name value="Manage clinical algorithm guidance changes through a change management process with quality assurance (using a reference system) and be able to push the information out to all solutions in use "/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Manage clinical algorithm guidance changes through a change management process with quality assurance (using a reference system) and be able to push the information out to all solutions in use &#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure that all guidance being followed in the field is using the latest approved guidance from WHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.045"/>
+      </reference>
+      <name value="Must have the ability to store images or other unstructured data"/>
+      <description value="*Category*: System requirements – general&#xA;Must have the ability to store images or other unstructured data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/neonateinfantchildcaregiver"/>
+      </reference>
+      <name value="Neonate/infant/child (caregiver)"/>
+      <description value="Actor Neonate/infant/child (caregiver) from Function Requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.014"/>
+      </reference>
+      <name value="Notify a user if their account is locked due to wrong password attempts"/>
+      <description value="*Category*: Security – authentication&#xA;Notify a user if their account is locked due to wrong password attempts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.011"/>
+      </reference>
+      <name value="Notify the user of a password change to their account"/>
+      <description value="*Category*: Security – authentication&#xA;Notify the user of a password change to their account"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.008"/>
+      </reference>
+      <name value="Notify the user to change their password the first time they log in"/>
+      <description value="*Category*: Security – authentication&#xA;Notify the user to change their password the first time they log in"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.031"/>
+      </reference>
+      <name value="Notify the user to regularly change the user's password"/>
+      <description value="*Category*: Security – user management&#xA;Notify the user to regularly change the user's password"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.006.E"/>
+      </reference>
+      <name value="Notify/send a reminder to the client's caregiver for the referral appointment "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-automatedsystemnotification.html&quot;&gt;Automated system notification&lt;/a&gt;, I want to:&#xA;&gt;Notify/send a reminder to the client's caregiver for the referral appointment &#xA;&#xA;so that&#xA;&#xA;&gt;So that the caregiver does not forget the appointment to receive the required health services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.008.D"/>
+      </reference>
+      <name value="Notify/send a reminder to the client's caregiver for the referral appointment "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-automatedsystemnotification.html&quot;&gt;Automated system notification&lt;/a&gt;, I want to:&#xA;&gt;Notify/send a reminder to the client's caregiver for the referral appointment &#xA;&#xA;so that&#xA;&#xA;&gt;So that the caregiver does not forget the appointment to receive the required health services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.005"/>
+      </reference>
+      <name value="Prevent remembering username and password"/>
+      <description value="*Category*: Security – confidentiality&#xA;Prevent remembering username and password"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.001.F"/>
+      </reference>
+      <name value="Produce a range of prepared and ad hoc reports and analyses "/>
+      <description value="*Business process* (F) Aggregate Reporting:&#xA;As a &lt;a href=&quot;ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html&quot;&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:&#xA;&gt;Produce a range of prepared and ad hoc reports and analyses &#xA;&#xA;so that&#xA;&#xA;&gt;I am able to use data collected at the facility, including data for service delivery (beyond reporting purposes alone)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.002.D"/>
+      </reference>
+      <name value="Provide a list of emergency referral locations and contact details if local emergency number (e.g. 911/999) is not used"/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of emergency referral locations and contact details if local emergency number (e.g. 911/999) is not used&#xA;&#xA;so that&#xA;&#xA;&gt;I can arrange emergency services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.001.E"/>
+      </reference>
+      <name value="Provide a list of follow-up location options and contact details"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of follow-up location options and contact details&#xA;&#xA;so that&#xA;&#xA;&gt;I can choose the best options for the client and schedule a follow-up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.003.D"/>
+      </reference>
+      <name value="Provide a list of referral location options, specialisms and contact details"/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of referral location options, specialisms and contact details&#xA;&#xA;so that&#xA;&#xA;&gt;I can choose the best options for the client's contact facility and schedule a referral"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.016.E"/>
+      </reference>
+      <name value="Provide a list of scheduled contacts and to allow for defaulters to be traced"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-communityhealthworker.html&quot;&gt;Community health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of scheduled contacts and to allow for defaulters to be traced&#xA;&#xA;so that&#xA;&#xA;&gt;I can track and follow up clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.029.A"/>
+      </reference>
+      <name value="Provide a list of scheduled contacts to allow for defaulters to be traced"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of scheduled contacts to allow for defaulters to be traced&#xA;&#xA;so that&#xA;&#xA;&gt;I can track and follow up clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.028.B"/>
+      </reference>
+      <name value="Provide a list of tests that the health worker can order"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of tests that the health worker can order&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.020.B"/>
+      </reference>
+      <name value="Provide a list of tests that the health worker can order for the client based on guidance for their age/symptoms/diagnosis"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list of tests that the health worker can order for the client based on guidance for their age/symptoms/diagnosis&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.015.E"/>
+      </reference>
+      <name value="Provide a list or roster of all clients in the schedule"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-communityhealthworker.html&quot;&gt;Community health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list or roster of all clients in the schedule&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage and follow up on clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.009.D"/>
+      </reference>
+      <name value="Provide a list or roster of all infant/child clients"/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a list or roster of all infant/child clients&#xA;&#xA;so that&#xA;&#xA;&gt;I know which clients to follow up or are due for services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.030.A"/>
+      </reference>
+      <name value="Provide a list or roster of all infant/child clients due to arrive"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Provide a list or roster of all infant/child clients due to arrive&#xA;&#xA;so that&#xA;&#xA;&gt;I know which clients to follow up or are due for services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.002"/>
+      </reference>
+      <name value="Provide a means to ensure confidentiality and privacy of personal health information"/>
+      <description value="*Category*: Security – confidentiality&#xA;Provide a means to ensure confidentiality and privacy of personal health information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.010"/>
+      </reference>
+      <name value="Provide a mechanism to securely change a user's password"/>
+      <description value="*Category*: Security – authentication&#xA;Provide a mechanism to securely change a user's password"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.002.G"/>
+      </reference>
+      <name value="Provide a modular approach to the solution to accommodate variations required to make the solution country-specific, for example: &#xA;- ability to use/not to use personal identifiers for registration &#xA;- include a focus on symptoms/diagnosis that may appear in a country-susceptible manner (malaria, HIV)&#xA;- treatment modules that may be available in the country/setting (e.g. oral only vs injections)"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Provide a modular approach to the solution to accommodate variations required to make the solution country-specific, for example: &#xA;- ability to use/not to use personal identifiers for registration &#xA;- include a focus on symptoms/diagnosis that may appear in a country-susceptible manner (malaria, HIV)&#xA;- treatment modules that may be available in the country/setting (e.g. oral only vs injections)&#xA;&#xA;so that&#xA;&#xA;&gt;The registration and consultation process includes what is more likely required without by-passing questions that are not required"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.008.C"/>
+      </reference>
+      <name value="Provide a source to access accurate health information "/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a source to access accurate health information &#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.016.C"/>
+      </reference>
+      <name value="Provide a source to access accurate health information "/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a source to access accurate health information &#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.015.B"/>
+      </reference>
+      <name value="Provide a standardized form for the entry of clinical data"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a standardized form for the entry of clinical data&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client's health information is recorded and up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.024.B"/>
+      </reference>
+      <name value="Provide a standardized form for the entry of clinical data"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a standardized form for the entry of clinical data&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client's health information is recorded and up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.023.B"/>
+      </reference>
+      <name value="Provide a standardized form for the entry of the client's profile"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a standardized form for the entry of the client's profile&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client's health information is recorded and up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.014.B"/>
+      </reference>
+      <name value="Provide a standardized form for the entry of the clients profile"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide a standardized form for the entry of the clients profile&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the client's health information is recorded and up to date"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.034"/>
+      </reference>
+      <name value="Provide a unique version number for each revision"/>
+      <description value="*Category*: System requirements – general&#xA;Provide a unique version number for each revision"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.013.D"/>
+      </reference>
+      <name value="Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality"/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.023.E"/>
+      </reference>
+      <name value="Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-neonateinfantchildcaregiver.html&quot;&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.022.E"/>
+      </reference>
+      <name value="Provide a way to share sources for access accurate health information "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-neonateinfantchildcaregiver.html&quot;&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a way to share sources for access accurate health information &#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.D"/>
+      </reference>
+      <name value="Provide a way to share sources to access to accurate health information "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide a way to share sources to access to accurate health information &#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.003"/>
+      </reference>
+      <name value="Provide ability for allowed users to view confidential data"/>
+      <description value="*Category*: Security – confidentiality&#xA;Provide ability for allowed users to view confidential data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.066"/>
+      </reference>
+      <name value="Provide access to data through application programming interfaces to interface with other SMART guideline reference App solutions, incumbent solutions (e.g. registration systems) and reporting tools"/>
+      <description value="*Category*: System requirements – interoperability&#xA;Provide access to data through application programming interfaces to interface with other SMART guideline reference App solutions, incumbent solutions (e.g. registration systems) and reporting tools"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.006.C"/>
+      </reference>
+      <name value="Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.014.C"/>
+      </reference>
+      <name value="Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.007.C"/>
+      </reference>
+      <name value="Provide decision support as appropriate for users "/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide decision support as appropriate for users &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.003.C"/>
+      </reference>
+      <name value="Provide decision support as appropriate for users based on the data entered"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide decision support as appropriate for users based on the data entered&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.C"/>
+      </reference>
+      <name value="Provide decision support as appropriate for users based on the data entered"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide decision support as appropriate for users based on the data entered&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.015.C"/>
+      </reference>
+      <name value="Provide decision support as appropriate for users based on the data entered"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide decision support as appropriate for users based on the data entered&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.007"/>
+      </reference>
+      <name value="Provide encrypted communication between components"/>
+      <description value="*Category*: Security – confidentiality&#xA;Provide encrypted communication between components"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.029.B"/>
+      </reference>
+      <name value="Provide fields where test results that have been ordered can be recorded"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide fields where test results that have been ordered can be recorded&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.058"/>
+      </reference>
+      <name value="Provide guidance to the users to better support clinical guidelines and best clinical practices"/>
+      <description value="*Category*: System requirements – usability&#xA;Provide guidance to the users to better support clinical guidelines and best clinical practices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.021.B"/>
+      </reference>
+      <name value="Provide information so that test results that have been ordered can be recorded"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide information so that test results that have been ordered can be recorded&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.051"/>
+      </reference>
+      <name value="Provide informative error messages and tooltips"/>
+      <description value="*Category*: System requirements – usability&#xA;Provide informative error messages and tooltips"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.001"/>
+      </reference>
+      <name value="Provide password-protected access for authorized users"/>
+      <description value="*Category*: Security – confidentiality&#xA;Provide password-protected access for authorized users"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.016.B"/>
+      </reference>
+      <name value="Provide real-time range checks and data integrity checks on data"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide real-time range checks and data integrity checks on data&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the entry of accurate information and reduce errors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.025.B"/>
+      </reference>
+      <name value="Provide real-time range checks and data integrity checks on data"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide real-time range checks and data integrity checks on data&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the entry of accurate information and reduce errors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.025"/>
+      </reference>
+      <name value="Provide role-based access"/>
+      <description value="*Category*: Security – user management&#xA;Provide role-based access"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.015"/>
+      </reference>
+      <name value="Provide role-based access to the system"/>
+      <description value="*Category*: Security – authentication&#xA;Provide role-based access to the system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.013.A"/>
+      </reference>
+      <name value="Provide sufficient data to rule out that this client is already in the system"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Provide sufficient data to rule out that this client is already in the system&#xA;&#xA;so that&#xA;&#xA;&gt;I can avoid duplicates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.027.A"/>
+      </reference>
+      <name value="Provide the ability to &quot;check in&quot; for a scheduled contact"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Provide the ability to \&quot;check in\&quot; for a scheduled contact&#xA;&#xA;so that&#xA;&#xA;&gt;I can initiate services at the follow-up contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.031.A"/>
+      </reference>
+      <name value="Provide tools to search, sort and filter the infant/child client database"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Provide tools to search, sort and filter the infant/child client database&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage and follow up on clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.010.D"/>
+      </reference>
+      <name value="Provide tools to search, sort and filter the infant/child database"/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;Provide tools to search, sort and filter the infant/child database&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage and follow up on clients requiring services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.D"/>
+      </reference>
+      <name value="Provide/print/share information/clinical guidance to the client's caregiver as relevant "/>
+      <description value="*Business process* (D) Referral:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide/print/share information/clinical guidance to the client's caregiver as relevant &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.021.E"/>
+      </reference>
+      <name value="Provide/print/share information/clinical guidance with the client's caregiver as relevant "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-neonateinfantchildcaregiver.html&quot;&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Provide/print/share information/clinical guidance with the client's caregiver as relevant &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.075"/>
+      </reference>
+      <name value="Provision of design, build, technical system and architecture, and testing documentation for future support and further configuration of the solution for other health intervention initiatives"/>
+      <description value="*Category*: Documentation&#xA;Provision of design, build, technical system and architecture, and testing documentation for future support and further configuration of the solution for other health intervention initiatives"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.A"/>
+      </reference>
+      <name value="Read client identification system (e.g. quick response [QR] code, barcode, fingerprint) and pull up client information"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Read client identification system (e.g. quick response [QR] code, barcode, fingerprint) and pull up client information&#xA;&#xA;so that&#xA;&#xA;&gt;I can confirm that it is the correct client and update information as necessary"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.009.C"/>
+      </reference>
+      <name value="Receive information messages in a way that ensures patient confidentiality"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Receive information messages in a way that ensures patient confidentiality&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.017.C"/>
+      </reference>
+      <name value="Receive information messages/alerts in a way that ensures patient confidentiality"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Receive information messages/alerts in a way that ensures patient confidentiality&#xA;&#xA;so that&#xA;&#xA;&gt;I can manage my client's health in my daily life"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.025.A"/>
+      </reference>
+      <name value="Record a time/date-stamped new contact (encounter)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Record a time/date-stamped new contact (encounter)&#xA;&#xA;so that&#xA;&#xA;&gt;I can confirm when the client came"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.017"/>
+      </reference>
+      <name value="Record all authentication violations"/>
+      <description value="*Category*: Security – audit trail and logs&#xA;Record all authentication violations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.004.E"/>
+      </reference>
+      <name value="Record identification and tracking information (such as mobile phone number) "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Record identification and tracking information (such as mobile phone number) &#xA;&#xA;so that&#xA;&#xA;&gt;I can follow up and remind the client on when to return for services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.E"/>
+      </reference>
+      <name value="Record identification and tracking information (such as mobile phone number) "/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-facilityhealthworker.html&quot;&gt;Facility health worker&lt;/a&gt;, I want to:&#xA;&gt;Record identification and tracking information (such as mobile phone number) &#xA;&#xA;so that&#xA;&#xA;&gt;I can follow up and remind the client on when to return for services"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.017.E"/>
+      </reference>
+      <name value="Refer to Business Process A: Registration"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-neonateinfantchildcaregiver.html&quot;&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Refer to Business Process A: Registration&#xA;&#xA;so that&#xA;&#xA;&gt;I can register attendance of the follow-up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.018.E"/>
+      </reference>
+      <name value="Refer to Business Process A: Registration"/>
+      <description value="*Business process* (E) Follow-up:&#xA;As a &lt;a href=&quot;ActorDefinition-communityhealthworker.html&quot;&gt;Community health worker&lt;/a&gt;, I want to:&#xA;&gt;Refer to Business Process A: Registration&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify the correct client details and health records"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.039"/>
+      </reference>
+      <name value="Report version number when saving data to the database"/>
+      <description value="*Category*: System requirements – general&#xA;Report version number when saving data to the database"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.A"/>
+      </reference>
+      <name value="Require a user to search if a client is already in the system before starting a new medical record entry"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Require a user to search if a client is already in the system before starting a new medical record entry&#xA;&#xA;so that&#xA;&#xA;&gt;I can confirm that it is the correct client and update information as necessary"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.012"/>
+      </reference>
+      <name value="Reset a user's password in a secure manner"/>
+      <description value="*Category*: Security – authentication&#xA;Reset a user's password in a secure manner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.046"/>
+      </reference>
+      <name value="Scalable to accommodate new demands"/>
+      <description value="*Category*: System requirements – scalability&#xA;Scalable to accommodate new demands"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.009.A"/>
+      </reference>
+      <name value="Search if the client is already in system (using at least two identifiers) (including information pertaining to the client's caregiver)"/>
+      <description value="*Business process* (A) Registration:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerorclerk.html&quot;&gt;Health worker or clerk&lt;/a&gt;, I want to:&#xA;&gt;Search if the client is already in system (using at least two identifiers) (including information pertaining to the client's caregiver)&#xA;&#xA;so that&#xA;&#xA;&gt;I can check if this is a new or existing client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.042"/>
+      </reference>
+      <name value="Show the number of records that are not yet synchronized"/>
+      <description value="*Category*: System requirements – general&#xA;Show the number of records that are not yet synchronized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.054"/>
+      </reference>
+      <name value="Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes"/>
+      <description value="*Category*: System requirements – usability&#xA;Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.001.G"/>
+      </reference>
+      <name value="Solution must be able to leverage the data dictionary (to be produced as part of workstream 2/3 work) "/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;Solution must be able to leverage the data dictionary (to be produced as part of workstream 2/3 work) &#xA;&#xA;so that&#xA;&#xA;&gt;The tool is consistent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.013.C"/>
+      </reference>
+      <name value="Suggest appropriate treatments/investigations based on findings"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Suggest appropriate treatments/investigations based on findings&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.004.C"/>
+      </reference>
+      <name value="Suggest appropriate treatments/investigations based on findings including the ability to propose alternative treatments in the case that the primary treatment is not available"/>
+      <description value="*Business process* (C) Treat the child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworkerandneonateinfantchildcaregiver.html&quot;&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:&#xA;&gt;Suggest appropriate treatments/investigations based on findings including the ability to propose alternative treatments in the case that the primary treatment is not available&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.033"/>
+      </reference>
+      <name value="Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"/>
+      <description value="*Category*: Security – user management&#xA;Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.055"/>
+      </reference>
+      <name value="Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic"/>
+      <description value="*Category*: System requirements – usability&#xA;Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.053"/>
+      </reference>
+      <name value="Support real-time data entry validation and feedback to prevent data entry errors from being recorded"/>
+      <description value="*Category*: System requirements – usability&#xA;Support real-time data entry validation and feedback to prevent data entry errors from being recorded"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.067"/>
+      </reference>
+      <name value="The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources)"/>
+      <description value="*Category*: System requirements – interoperability&#xA;The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.011.G"/>
+      </reference>
+      <name value="The solution to represent data in an FHIR format that can be synced with client applications that use the FHIR international patient summary (IPS) on their mobile devices"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;The solution to represent data in an FHIR format that can be synced with client applications that use the FHIR international patient summary (IPS) on their mobile devices&#xA;&#xA;so that&#xA;&#xA;&gt;To ensure that clients are able to access their personal records and keep a copy on their phones using the Health Level 7 IPS format."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.009.G"/>
+      </reference>
+      <name value="The solution to store data in an FHIR-compliant server"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;The solution to store data in an FHIR-compliant server&#xA;&#xA;so that&#xA;&#xA;&gt;Consistency of data representation and ability to exchange data with other services and solutions using FHIR standards and common value sets (International Statistical Classification of Diseases and Related Health Problems, Logical Observation Identifiers, Names and Codes)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.008.G"/>
+      </reference>
+      <name value="The solution to support multi-media, such as video, photos and audio"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;The solution to support multi-media, such as video, photos and audio&#xA;&#xA;so that&#xA;&#xA;&gt;Examples of symptoms, diagnosis and treatment may be used throughout the consultation process"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.010.G"/>
+      </reference>
+      <name value="The solution to sync data in an FHIR-compliant server"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;The solution to sync data in an FHIR-compliant server&#xA;&#xA;so that&#xA;&#xA;&gt;Ensure that data are stored and synced with a server, so that patient information relevant to another user of Child Health in Emergencies Digital Platform can access information for client history and to maintain continuity in care delivery"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.012.G"/>
+      </reference>
+      <name value="To be able to add data and calculations as well as forms to the reference application, for localization (language support) and adaptation (addition of core health and data content), as well as calculations for decision-support and populating indicators"/>
+      <description value="*Business process* (G) Triage and Emergency Assessment:&#xA;As a &lt;a href=&quot;ActorDefinition-allusers.html&quot;&gt;All Users&lt;/a&gt;, I want to:&#xA;&gt;To be able to add data and calculations as well as forms to the reference application, for localization (language support) and adaptation (addition of core health and data content), as well as calculations for decision-support and populating indicators&#xA;&#xA;so that&#xA;&#xA;&gt;The tool and embedded forms (and associated interventions) can be adapted and localized by the user's governments/WHO/partners without requiring the assistance of engineers from the vendor each time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.022.B"/>
+      </reference>
+      <name value="To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision&#xA;&#xA;so that&#xA;&#xA;&gt;If a diagnosis is deemed incorrect that I can correct it with suitable reasoning to ensure that the correct treatment recommendations are provided"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.030.B"/>
+      </reference>
+      <name value="To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision&#xA;&#xA;so that&#xA;&#xA;&gt;If a diagnosis is deemed incorrect that I can correct it with suitable reasoning to ensure that the correct treatment recommendations are provided"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.005.B"/>
+      </reference>
+      <name value="To be able to choose the option of a consultation that leads me through the full process to assess and classify the sick child and further to treat the child, referral and follow-up"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to choose the option of a consultation that leads me through the full process to assess and classify the sick child and further to treat the child, referral and follow-up&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure that a complete consultation is provided"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.004.B"/>
+      </reference>
+      <name value="To be able to choose the option to refer in general to the SMART guidance without having to complete a full consultation (e.g. for training/reference only) "/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to choose the option to refer in general to the SMART guidance without having to complete a full consultation (e.g. for training/reference only) &#xA;&#xA;so that&#xA;&#xA;&gt;I can refresh my training and knowledge"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.017.B"/>
+      </reference>
+      <name value="To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms "/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide a complete consultation and identify if there is more than one diagnosis and treatment recommendation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.026.B"/>
+      </reference>
+      <name value="To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms "/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms &#xA;&#xA;so that&#xA;&#xA;&gt;I can provide a complete consultation and identify if there is more than one diagnosis and treatment recommendation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.018.B"/>
+      </reference>
+      <name value="To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available&#xA;&#xA;so that&#xA;&#xA;&gt;I do not have to start a new consultation for every health worker that the client is involved with"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.006.B"/>
+      </reference>
+      <name value="To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available. "/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available. &#xA;&#xA;so that&#xA;&#xA;&gt;I do not have to start a new consultation for every health worker that the client is involved with"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.056"/>
+      </reference>
+      <name value="Use industry-standard user interface practices and apply them in a consistent manner throughout the system"/>
+      <description value="*Category*: System requirements – usability&#xA;Use industry-standard user interface practices and apply them in a consistent manner throughout the system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.FXREQ.009.B"/>
+      </reference>
+      <name value="View a review of any past medical history previously entered"/>
+      <description value="*Business process* (B) Assess and Classify the Sick Child:&#xA;As a &lt;a href=&quot;ActorDefinition-healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want to:&#xA;&gt;View a review of any past medical history previously entered&#xA;&#xA;so that&#xA;&#xA;&gt;I can provide appropriate services according to the latest clinical protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.044"/>
+      </reference>
+      <name value="Warn user if no valid back-up for more than a predefined number of days"/>
+      <description value="*Category*: System requirements – general&#xA;Warn user if no valid back-up for more than a predefined number of days"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/CHE.NFXNREQ.037"/>
+      </reference>
+      <name value="Work in an environment that is subject to loss of connectivity"/>
+      <description value="*Category*: System requirements – general&#xA;Work in an environment that is subject to loss of connectivity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="changes.html"/>
+          <title value="Changes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="adapting.html"/>
+          <title value="Adapting Guidelines for Country use"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="license.html"/>
+          <title value="License"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="business-requirements.html"/>
+        <title value="Business Requirements"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="personas.html"/>
+          <title value="Generic Personas"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="scenarios.html"/>
+          <title value="User Scenarios"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="business-processes.html"/>
+          <title value="Business Processes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="dictionary.html"/>
+          <title value="Data Dictionary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="decision-logic.html"/>
+          <title value="Decision-support logic"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="scheduling-logic.html"/>
+          <title value="Scheduling logic"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="indicators.html"/>
+          <title value="Indicator and Performance Metrics"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="system-requirements.html"/>
+          <title value="System Requirements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="functional-requirements.html"/>
+          <title value="Functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="non-functional-requirements.html"/>
+          <title value="Non-functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="data-models-and-exchange.html"/>
+        <title value="Data Models and Exchange"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="system-actors.html"/>
+          <title value="System Actors"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="sequence-diagrams.html"/>
+          <title value="Sequence Diagrams"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="indicators-measures.html"/>
+          <title value="Indicators and Measures"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="codings.html"/>
+          <title value="Codings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="security-privacy.html"/>
+          <title value="Security and Privacy Considerations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-data.html"/>
+          <title value="Test Data"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="reference-implementations.html"/>
+          <title value="Reference Implementations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="trust_domain.html"/>
+          <title value="Trust Domains"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="indices.html"/>
+        <title value="Indices"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="maps.html"/>
+          <title value="Mappings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/dictionary"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/decision-logic"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/business-processes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/scheduling-logic"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/indicators"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/system-requirements"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

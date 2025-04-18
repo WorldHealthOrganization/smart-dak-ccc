@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/dak-ccc/CodeSystem/FXREQBusinessProcesses> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FXREQBusinessProcesses"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem FXREQBusinessProcesses</b></p><a name=\"FXREQBusinessProcesses\"> </a><a name=\"hcFXREQBusinessProcesses\"> </a><a name=\"FXREQBusinessProcesses-en-US\"> </a><p>This  code system <code>http://smart.who.int/dak-ccc/CodeSystem/FXREQBusinessProcesses</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"FXREQBusinessProcesses-A\"> </a></td><td>Registration</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"FXREQBusinessProcesses-B\"> </a></td><td>Assess and Classify the Sick Child</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"FXREQBusinessProcesses-C\"> </a></td><td>Treat the child</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"FXREQBusinessProcesses-D\"> </a></td><td>Referral</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"FXREQBusinessProcesses-E\"> </a></td><td>Follow-up</td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"FXREQBusinessProcesses-F\"> </a></td><td>Aggregate Reporting</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"FXREQBusinessProcesses-G\"> </a></td><td>Triage and Emergency Assessment</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/dak-ccc/CodeSystem/FXREQBusinessProcesses"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "FXREQBusinessProcesses"] ; # 
+  fhir:title [ fhir:v "Functional Requirements - Business Process"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-04-18T02:23:52+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet of Functional Requirements - Business Process"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Registration" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Assess and Classify the Sick Child" ]
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "Treat the child" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Referral" ]
+  ] [
+     fhir:code [ fhir:v "E" ] ;
+     fhir:display [ fhir:v "Follow-up" ]
+  ] [
+     fhir:code [ fhir:v "F" ] ;
+     fhir:display [ fhir:v "Aggregate Reporting" ]
+  ] [
+     fhir:code [ fhir:v "G" ] ;
+     fhir:display [ fhir:v "Triage and Emergency Assessment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

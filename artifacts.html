@@ -1,0 +1,3001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifact Index - SMART DAK CCC v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="scheduling-logic.html">Scheduling Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="system-requirements.html">System Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+      
+<img height="50" style="margin:7px" alt="Welcome on standards website" src="assets/images/h-logo-blue.svg"/>
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-active">
+          <p><span style="font-size:12pt;font-weight:bold">SMART DAK CCC</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><b>Artifact Index</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART DAK CCC, published by WHO. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/smart-dak-ccc/tree/main">https://github.com/WorldHealthOrganization/smart-dak-ccc/tree/main</a> and changes regularly. See the <a href="http://smart.who.int/dak-ccc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifact Index</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Requirements: Actor Definitions</a>
+      </li>
+      <li>
+         <a href="#2">Requirements: Formal Requirements</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Requirements: Actor Definitions </h3>
+    <p>The following artifacts define the types of individuals and/or systems that will interact as part of the use cases covered by this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-allusers.html" title="ActorDefinition/allusers">All Users</a>
+            </td>
+            <td>
+<p>Actor All Users from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-automatedsystemnotification.html"
+                  title="ActorDefinition/automatedsystemnotification">Automated system notification</a>
+            </td>
+            <td>
+<p>Actor Automated system notification from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-communityhealthworker.html"
+                  title="ActorDefinition/communityhealthworker">Community health worker</a>
+            </td>
+            <td>
+<p>Actor Community health worker from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-facilityhealthworker.html"
+                  title="ActorDefinition/facilityhealthworker">Facility health worker</a>
+            </td>
+            <td>
+<p>Actor Facility health worker from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html"
+                  title="ActorDefinition/facilitystafffacilitystaffinchargedistricthealthofficerstaff">Facility staff, facility staff in charge, district health officer/staff</a>
+            </td>
+            <td>
+<p>Actor Facility staff, facility staff in charge, district health officer/staff from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-healthworker.html"
+                  title="ActorDefinition/healthworker">Health worker</a>
+            </td>
+            <td>
+<p>Actor Health worker from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"
+                  title="ActorDefinition/healthworkerandneonateinfantchildcaregiver">Health worker and neonate/infant/child (caregiver)</a>
+            </td>
+            <td>
+<p>Actor Health worker and neonate/infant/child (caregiver) from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-healthworkerorclerk.html"
+                  title="ActorDefinition/healthworkerorclerk">Health worker or clerk</a>
+            </td>
+            <td>
+<p>Actor Health worker or clerk from Function Requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-neonateinfantchildcaregiver.html"
+                  title="ActorDefinition/neonateinfantchildcaregiver">Neonate/infant/child (caregiver)</a>
+            </td>
+            <td>
+<p>Actor Neonate/infant/child (caregiver) from Function Requirements</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Requirements: Formal Requirements </h3>
+    <p>The following artifacts describe the specific requirements to be met by systems compliant with the implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.074.html"
+                  title="Requirements/CHE.NFXNREQ.074">Ability to work offline and in low-bandwidth areas</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – hardware and connectivity
+Ability to work offline and in low-bandwidth areas</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.071.html"
+                  title="Requirements/CHE.NFXNREQ.071">Accept data from multiple input methods including paper and geocoding (global positioning system)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Accept data from multiple input methods including paper and geocoding (global positioning system)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.014.A.html"
+                  title="Requirements/CHE.FXREQ.014.A">Add data that provide socio-demographic information about the client</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Add data that provide socio-demographic information about the client</p>
+
+<p>so that</p>
+
+<p>&gt;I can use the data to for analysis, forecasting and planning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.009.html"
+                  title="Requirements/CHE.NFXNREQ.009">Adhere to complex password requirements</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Adhere to complex password requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.060.html"
+                  title="Requirements/CHE.NFXNREQ.060">Adjust display to fit small screens (such as mobile phones)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Adjust display to fit small screens (such as mobile phones)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.052.html"
+                  title="Requirements/CHE.NFXNREQ.052">Alert the user when navigating away from the form without saving</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Alert the user when navigating away from the form without saving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.030.html"
+                  title="Requirements/CHE.NFXNREQ.030">Allow admin user to request password reset</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow admin user to request password reset</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.027.html"
+                  title="Requirements/CHE.NFXNREQ.027">Allow cascading user management and assignment of roles</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow cascading user management and assignment of roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.032.html"
+                  title="Requirements/CHE.NFXNREQ.032">Allow each user to be assigned to one or more roles</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow each user to be assigned to one or more roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.018.A.html"
+                  title="Requirements/CHE.FXREQ.018.A">Allow edits to fields on screen before information is committed</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Allow edits to fields on screen before information is committed</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure information has been checked before submission</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.022.A.html"
+                  title="Requirements/CHE.FXREQ.022.A">Allow edits to fields on screen before information is committed</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Allow edits to fields on screen before information is committed</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure information has been checked before submission</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.019.A.html"
+                  title="Requirements/CHE.FXREQ.019.A">Allow for a temporary identification in emergency situations when full identity is unknown</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Allow for a temporary identification in emergency situations when full identity is unknown</p>
+
+<p>so that</p>
+
+<p>&gt;I can proceed with registration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.023.A.html"
+                  title="Requirements/CHE.FXREQ.023.A">Allow for a temporary identification in emergency situations when full identity is unknown</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Allow for a temporary identification in emergency situations when full identity is unknown</p>
+
+<p>so that</p>
+
+<p>&gt;I can proceed with registration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.072.html"
+                  title="Requirements/CHE.NFXNREQ.072">Allow for data exchange and efficient synchronization across multiple facilities and points of service when the Internet is available, even when it is intermittent and slow</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – hardware and connectivity
+Allow for data exchange and efficient synchronization across multiple facilities and points of service when the Internet is available, even when it is intermittent and slow</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.041.html"
+                  title="Requirements/CHE.NFXNREQ.041">Allow for offline and online functionality</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Allow for offline and online functionality</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.026.html"
+                  title="Requirements/CHE.NFXNREQ.026">Allow roles to be associated with specific geographical areas and/or health facilities (with the ability to choose which facility to log into as the user may work across several facilities)</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow roles to be associated with specific geographical areas and/or health facilities (with the ability to choose which facility to log into as the user may work across several facilities)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.002.C.html"
+                  title="Requirements/CHE.FXREQ.002.C">Allow the recording of key observations during a visit and a space to make general notes about the consultation and treatment provided</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Allow the recording of key observations during a visit and a space to make general notes about the consultation and treatment provided</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure that the client's health information is recorded and kept up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.018.C.html"
+                  title="Requirements/CHE.FXREQ.018.C">Allow the recording of key observations during the follow-up visit</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Allow the recording of key observations during the follow-up visit</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client's health information is recorded and kept up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.028.html"
+                  title="Requirements/CHE.NFXNREQ.028">Allow user to change the user's own password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow user to change the user's own password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.024.html"
+                  title="Requirements/CHE.NFXNREQ.024">Allow user with permission to create a new user and temporary password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow user with permission to create a new user and temporary password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.029.html"
+                  title="Requirements/CHE.NFXNREQ.029">Allow users to enable and disable another user</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Allow users to enable and disable another user</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.004.html"
+                  title="Requirements/CHE.NFXNREQ.004">Anonymize data that are exported from the system when required (also ability to export non-anonymized data from the system)</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Anonymize data that are exported from the system when required (also ability to export non-anonymized data from the system)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.006.html"
+                  title="Requirements/CHE.NFXNREQ.006">Automatically log out the user after specified time of inactivity</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Automatically log out the user after specified time of inactivity</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.047.html"
+                  title="Requirements/CHE.NFXNREQ.047">Be able to accommodate at least 3000 health facilities</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Be able to accommodate at least 3000 health facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.048.html"
+                  title="Requirements/CHE.NFXNREQ.048">Be able to accommodate at least 5000 concurrent users</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Be able to accommodate at least 5000 concurrent users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.049.html"
+                  title="Requirements/CHE.NFXNREQ.049">Be able to accommodate more than [x number of] concurrent users</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Be able to accommodate more than [x number of] concurrent users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.006.G.html"
+                  title="Requirements/CHE.FXREQ.006.G">Be able to build the type of solution suitable for my country/setting using the correct modules according to preferences</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Be able to build the type of solution suitable for my country/setting using the correct modules according to preferences</p>
+
+<p>so that</p>
+
+<p>&gt;I can build the solution as closely as possible to the country/setting according to regulations within the country and according to our specific solution requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.G.html"
+                  title="Requirements/CHE.FXREQ.005.G">Be able to differentiate between simple and complex care provision requirements</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Be able to differentiate between simple and complex care provision requirements</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide the correct level of detail for the user type (e.g. doctor/specialist vs nurse health workers)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.016.A.html"
+                  title="Requirements/CHE.FXREQ.016.A">Be able to edit the identification information (including information pertaining to the client's caregiver)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to edit the identification information (including information pertaining to the client's caregiver)</p>
+
+<p>so that</p>
+
+<p>&gt;I can update existing client information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.020.A.html"
+                  title="Requirements/CHE.FXREQ.020.A">Be able to enter new identification information (including information pertaining to the client's caregiver)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to enter new identification information (including information pertaining to the client's caregiver)</p>
+
+<p>so that</p>
+
+<p>&gt;I can enter new client information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.004.D.html"
+                  title="Requirements/CHE.FXREQ.004.D">Be able to find out where a treatment method may be available nearby </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Be able to find out where a treatment method may be available nearby </p>
+
+<p>so that</p>
+
+<p>&gt;I can refer my client to another facility to receive the appropriate services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.006.A.html"
+                  title="Requirements/CHE.FXREQ.006.A">Be able to gather the client's caregiver basic information (if required)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to gather the client's caregiver basic information (if required)</p>
+
+<p>so that</p>
+
+<p>&gt;I can track and follow the name of the client's caregiver for the purposes of engagement during the consultation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.007.A.html"
+                  title="Requirements/CHE.FXREQ.007.A">Be able to gather unique identifier number/information pertaining to the client that does not include personal information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to gather unique identifier number/information pertaining to the client that does not include personal information</p>
+
+<p>so that</p>
+
+<p>&gt;I do not have to manage personal information management regulations/laws</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.008.A.html"
+                  title="Requirements/CHE.FXREQ.008.A">Be able to gather unique identifier number/information pertaining to the client that includes personal information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to gather unique identifier number/information pertaining to the client that includes personal information</p>
+
+<p>so that</p>
+
+<p>&gt;I can identify the client using personal information within personal information management regulations/laws</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.024.A.html"
+                  title="Requirements/CHE.FXREQ.024.A">Be able to input biometric information only (e.g. age, sex, respiration, weight, birthweight, height)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Be able to input biometric information only (e.g. age, sex, respiration, weight, birthweight, height)</p>
+
+<p>so that</p>
+
+<p>&gt;I can proceed without using personal information but still maintain medical information via a unique identifier number (also useful in emergency scenarios)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.015.D.html"
+                  title="Requirements/CHE.FXREQ.015.D">Be able to know the care my client received at the referral facility </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Be able to know the care my client received at the referral facility </p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate care if my client comes back to my facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.007.G.html"
+                  title="Requirements/CHE.FXREQ.007.G">Be able to provide feedback to the facility administrator/IT administrator for issues users notice through daily use of the tool and recommended solution improvements.</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Be able to provide feedback to the facility administrator/IT administrator for issues users notice through daily use of the tool and recommended solution improvements.</p>
+
+<p>so that</p>
+
+<p>&gt;Future solution development can be improved for the users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.003.F.html"
+                  title="Requirements/CHE.FXREQ.003.F">Be able to run calculations on data to populate indicators or reports on my own performance and service delivery – calculations on data should be conducted with Fast Health Interoperability Resources (FHIR) and contextual query language</a>
+            </td>
+            <td>
+<p><em>Business process</em> (F) Aggregate Reporting:
+As a &lt;a href="ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html"&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:
+&gt;Be able to run calculations on data to populate indicators or reports on my own performance and service delivery – calculations on data should be conducted with Fast Health Interoperability Resources (FHIR) and contextual query language</p>
+
+<p>so that</p>
+
+<p>&gt;I can understand trends and challenges and track my own performance over time </p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.014.E.html"
+                  title="Requirements/CHE.FXREQ.014.E">Be able to share my client’s health records with the follow-up facility </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Be able to share my client’s health records with the follow-up facility </p>
+
+<p>so that</p>
+
+<p>&gt;They can provide the care my client needs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.007.D.html"
+                  title="Requirements/CHE.FXREQ.007.D">Be able to share my client’s health records with the referral facility </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Be able to share my client’s health records with the referral facility </p>
+
+<p>so that</p>
+
+<p>&gt;They can provide the health care my client needs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.C.html"
+                  title="Requirements/CHE.FXREQ.005.C">Be able to show improvements or decline of a client's health based on previous/current consultations including before and after treatment</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Be able to show improvements or decline of a client's health based on previous/current consultations including before and after treatment</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.021.C.html"
+                  title="Requirements/CHE.FXREQ.021.C">Be able to start a new Business Process B: Assess and classify the sick child if new symptoms have been identified with the client</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Be able to start a new Business Process B: Assess and classify the sick child if new symptoms have been identified with the client</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.004.G.html"
+                  title="Requirements/CHE.FXREQ.004.G">Be able to track treatments via reference numbers so that these can be updated as required and can be used to create "treatment modules" pertinent to a country or emergency setting</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Be able to track treatments via reference numbers so that these can be updated as required and can be used to create "treatment modules" pertinent to a country or emergency setting</p>
+
+<p>so that</p>
+
+<p>&gt;Countries can implement the correct treatment module for their regulations and emergency setting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.002.F.html"
+                  title="Requirements/CHE.FXREQ.002.F">Be able to view data on my own performance and service delivery  </a>
+            </td>
+            <td>
+<p><em>Business process</em> (F) Aggregate Reporting:
+As a &lt;a href="ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html"&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:
+&gt;Be able to view data on my own performance and service delivery  </p>
+
+<p>so that</p>
+
+<p>&gt;I can understand trends and challenges and track my own performance over time </p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.B.html"
+                  title="Requirements/CHE.FXREQ.012.B">Be able to view the age of the client on the client record or after consultation with the caregiver to add the client's age to the record</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Be able to view the age of the client on the client record or after consultation with the caregiver to add the client's age to the record</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services for the client's problems based on their age</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.040.html"
+                  title="Requirements/CHE.NFXNREQ.040">Be designed to be flexible enough to accommodate for the necessary changes in the future</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Be designed to be flexible enough to accommodate for the necessary changes in the future</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.068.html"
+                  title="Requirements/CHE.NFXNREQ.068">Be interoperable with external systems through mediators</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Be interoperable with external systems through mediators</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.059.html"
+                  title="Requirements/CHE.NFXNREQ.059">Be reliable and robust (minimize the number of system crashes)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Be reliable and robust (minimize the number of system crashes)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.050.html"
+                  title="Requirements/CHE.NFXNREQ.050">Be user-friendly for people with low computer literacy</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Be user-friendly for people with low computer literacy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.A.html"
+                  title="Requirements/CHE.FXREQ.005.A">Bypass the standard flow at any point if an urgent case is identified – Refer to Business Process G. Triage and assessment</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Bypass the standard flow at any point if an urgent case is identified – Refer to Business Process G. Triage and assessment</p>
+
+<p>so that</p>
+
+<p>&gt;The child/infant can receive immediate attention – Refer to Business Process G. Triage and assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.065.html"
+                  title="Requirements/CHE.NFXNREQ.065">Communicate with external systems through mediators</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Communicate with external systems through mediators</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.062.html"
+                  title="Requirements/CHE.NFXNREQ.062">Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language [CQL] + Fast Health Interoperability Resources [FHIR])</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure business rules in line with guidelines and standard operating procedures (using the decision logic and contextual query language [CQL] + Fast Health Interoperability Resources [FHIR])</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.063.html"
+                  title="Requirements/CHE.NFXNREQ.063">Configure error messages</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure error messages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.061.html"
+                  title="Requirements/CHE.NFXNREQ.061">Configure the system centrally</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure the system centrally</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.064.html"
+                  title="Requirements/CHE.NFXNREQ.064">Configure workflows and business rules to accommodate differences between facilities</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – configuration
+Configure workflows and business rules to accommodate differences between facilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.C.html"
+                  title="Requirements/CHE.FXREQ.011.C">Create a new follow-up request to the health facility</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Create a new follow-up request to the health facility</p>
+
+<p>so that</p>
+
+<p>&gt;I can refer my client so that they receive the appropriate services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.020.C.html"
+                  title="Requirements/CHE.FXREQ.020.C">Create a new follow-up request to the health facility</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Create a new follow-up request to the health facility</p>
+
+<p>so that</p>
+
+<p>&gt;I can refer my client so that they receive the appropriate services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.010.C.html"
+                  title="Requirements/CHE.FXREQ.010.C">Create a new referral request to the health facility</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Create a new referral request to the health facility</p>
+
+<p>so that</p>
+
+<p>&gt;I can refer my client so that they receive the appropriate services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.019.C.html"
+                  title="Requirements/CHE.FXREQ.019.C">Create a new referral request to the health facility</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Create a new referral request to the health facility</p>
+
+<p>so that</p>
+
+<p>&gt;I can refer my client so that they receive the appropriate services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.008.B.html"
+                  title="Requirements/CHE.FXREQ.008.B">Determine whether to manage client at the facility or refer</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Determine whether to manage client at the facility or refer</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client receives appropriate services as quickly as possible</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.002.E.html"
+                  title="Requirements/CHE.FXREQ.002.E">Display a schedule of available days</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Display a schedule of available days</p>
+
+<p>so that</p>
+
+<p>&gt;I can notify client when to return for subsequent contact</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.010.E.html"
+                  title="Requirements/CHE.FXREQ.010.E">Display a schedule of available days</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Display a schedule of available days</p>
+
+<p>so that</p>
+
+<p>&gt;I can notify the client when to return for subsequent contact</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.010.A.html"
+                  title="Requirements/CHE.FXREQ.010.A">Display sufficient data to identify the client</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Display sufficient data to identify the client</p>
+
+<p>so that</p>
+
+<p>&gt;I can confirm that it is the correct client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.E.html"
+                  title="Requirements/CHE.FXREQ.005.E">Display the number of existing contacts per day (to allow for balancing)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Display the number of existing contacts per day (to allow for balancing)</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage and follow up on clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.057.html"
+                  title="Requirements/CHE.NFXNREQ.057">Easy to learn and intuitive to enable user to navigate between pages</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Easy to learn and intuitive to enable user to navigate between pages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.015.A.html"
+                  title="Requirements/CHE.FXREQ.015.A">Edit data that provide socio-demographic information about the client</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Edit data that provide socio-demographic information about the client</p>
+
+<p>so that</p>
+
+<p>&gt;I can use the data to for analysis, forecasting and planning</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.036.html"
+                  title="Requirements/CHE.NFXNREQ.036">Enable deployment in an environment subject to power loss</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Enable deployment in an environment subject to power loss</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.035.html"
+                  title="Requirements/CHE.NFXNREQ.035">Enable earlier versions of a record to be recoverable</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Enable earlier versions of a record to be recoverable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.073.html"
+                  title="Requirements/CHE.NFXNREQ.073">Enable use via a Web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – hardware and connectivity
+Enable use via a Web interface and mobile applications for use on various technology devices such as computers, laptops, tablets and mobiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.070.html"
+                  title="Requirements/CHE.NFXNREQ.070">Exchange data with other approved systems</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Exchange data with other approved systems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.D.html"
+                  title="Requirements/CHE.FXREQ.005.D">Find facilities that can provide the service or treatment method that mine cannot provide. </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Find facilities that can provide the service or treatment method that mine cannot provide. </p>
+
+<p>so that</p>
+
+<p>&gt;The client does not travel to a facility that cannot help them</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.038.html"
+                  title="Requirements/CHE.NFXNREQ.038">Generate IDs that are unique across different installations or sites</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Generate IDs that are unique across different installations or sites</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.022.html"
+                  title="Requirements/CHE.NFXNREQ.022">Generate analysis of the usage of different system features and reports</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Generate analysis of the usage of different system features and reports</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.043.html"
+                  title="Requirements/CHE.NFXNREQ.043">Have ability to easily back up information</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Have ability to easily back up information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.019.B.html"
+                  title="Requirements/CHE.FXREQ.019.B">Highlight abnormal values</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Highlight abnormal values</p>
+
+<p>so that</p>
+
+<p>&gt;I can identify critical health issues or errors (if a data entry issue)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.027.B.html"
+                  title="Requirements/CHE.FXREQ.027.B">Highlight abnormal values</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Highlight abnormal values</p>
+
+<p>so that</p>
+
+<p>&gt;I can identify critical health issues or errors (if a data entry issue)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.026.A.html"
+                  title="Requirements/CHE.FXREQ.026.A">Identify in the client's record if this is a follow-up appointment or an initial visit</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Identify in the client's record if this is a follow-up appointment or an initial visit</p>
+
+<p>so that</p>
+
+<p>&gt;I can identify which process to follow and view the client's previous problems that required a follow-up</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.007.B.html"
+                  title="Requirements/CHE.FXREQ.007.B">Identify key symptoms and signs that may require medical attention</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Identify key symptoms and signs that may require medical attention</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide the appropriate services as quickly as possible</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.028.A.html"
+                  title="Requirements/CHE.FXREQ.028.A">Identify the date of the last attended contact</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Identify the date of the last attended contact</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure client is receiving services according to the recommended contact schedule</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.003.E.html"
+                  title="Requirements/CHE.FXREQ.003.E">Indicate (based on protocol) the preferred days for follow-up contact</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Indicate (based on protocol) the preferred days for follow-up contact</p>
+
+<p>so that</p>
+
+<p>&gt;The client receives services according to the recommended contact schedule</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.E.html"
+                  title="Requirements/CHE.FXREQ.011.E">Indicate (based on the protocol) the preferred days for follow-up contact</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Indicate (based on the protocol) the preferred days for follow-up contact</p>
+
+<p>so that</p>
+
+<p>&gt;The client receives services according to recommended contact schedule</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.013.B.html"
+                  title="Requirements/CHE.FXREQ.013.B">Indicate if the age of the child is not known and be able to provide information as to how an age determination has been agreed</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Indicate if the age of the child is not known and be able to provide information as to how an age determination has been agreed</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.017.A.html"
+                  title="Requirements/CHE.FXREQ.017.A">Indicate mandatory fields that must be filled out for the registration to be valid</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Indicate mandatory fields that must be filled out for the registration to be valid</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure all necessary information has been completed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.021.A.html"
+                  title="Requirements/CHE.FXREQ.021.A">Indicate mandatory fields that must be filled out for the registration to be valid</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Indicate mandatory fields that must be filled out for the registration to be valid</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure all necessary information has been completed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.B.html"
+                  title="Requirements/CHE.FXREQ.011.B">Indicate that the patient has arrived for the initial visit, scheduled contact or specific complaint (tasks will vary based on health worker roles)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Indicate that the patient has arrived for the initial visit, scheduled contact or specific complaint (tasks will vary based on health worker roles)</p>
+
+<p>so that</p>
+
+<p>&gt;I can know what services to provide</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.069.html"
+                  title="Requirements/CHE.NFXNREQ.069">Link with insurance systems to verify eligibility and submit claims</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Link with insurance systems to verify eligibility and submit claims</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.013.html"
+                  title="Requirements/CHE.NFXNREQ.013">Lock a user out after a specified number of wrong password attempts</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Lock a user out after a specified number of wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.020.html"
+                  title="Requirements/CHE.NFXNREQ.020">Log access to data summaries, reports, analysis and visualization features</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log access to data summaries, reports, analysis and visualization features</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.019.html"
+                  title="Requirements/CHE.NFXNREQ.019">Log access to views of individual client records</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log access to views of individual client records</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.018.html"
+                  title="Requirements/CHE.NFXNREQ.018">Log all activities performed by the user, including date and time stamp</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log all activities performed by the user, including date and time stamp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.023.html"
+                  title="Requirements/CHE.NFXNREQ.023">Log all data and system errors</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log all data and system errors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.021.html"
+                  title="Requirements/CHE.NFXNREQ.021">Log exchange of data with other systems</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log exchange of data with other systems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.016.html"
+                  title="Requirements/CHE.NFXNREQ.016">Log system log-ins and log-outs</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Log system log-ins and log-outs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.003.G.html"
+                  title="Requirements/CHE.FXREQ.003.G">Manage clinical algorithm guidance changes through a change management process with quality assurance (using a reference system) and be able to push the information out to all solutions in use </a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Manage clinical algorithm guidance changes through a change management process with quality assurance (using a reference system) and be able to push the information out to all solutions in use</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure that all guidance being followed in the field is using the latest approved guidance from WHO</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.045.html"
+                  title="Requirements/CHE.NFXNREQ.045">Must have the ability to store images or other unstructured data</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Must have the ability to store images or other unstructured data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.014.html"
+                  title="Requirements/CHE.NFXNREQ.014">Notify a user if their account is locked due to wrong password attempts</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify a user if their account is locked due to wrong password attempts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.011.html"
+                  title="Requirements/CHE.NFXNREQ.011">Notify the user of a password change to their account</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify the user of a password change to their account</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.008.html"
+                  title="Requirements/CHE.NFXNREQ.008">Notify the user to change their password the first time they log in</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Notify the user to change their password the first time they log in</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.031.html"
+                  title="Requirements/CHE.NFXNREQ.031">Notify the user to regularly change the user's password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Notify the user to regularly change the user's password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.006.E.html"
+                  title="Requirements/CHE.FXREQ.006.E">Notify/send a reminder to the client's caregiver for the referral appointment </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-automatedsystemnotification.html"&gt;Automated system notification&lt;/a&gt;, I want to:
+&gt;Notify/send a reminder to the client's caregiver for the referral appointment</p>
+
+<p>so that</p>
+
+<p>&gt;So that the caregiver does not forget the appointment to receive the required health services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.008.D.html"
+                  title="Requirements/CHE.FXREQ.008.D">Notify/send a reminder to the client's caregiver for the referral appointment </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-automatedsystemnotification.html"&gt;Automated system notification&lt;/a&gt;, I want to:
+&gt;Notify/send a reminder to the client's caregiver for the referral appointment</p>
+
+<p>so that</p>
+
+<p>&gt;So that the caregiver does not forget the appointment to receive the required health services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.005.html"
+                  title="Requirements/CHE.NFXNREQ.005">Prevent remembering username and password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Prevent remembering username and password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.001.F.html"
+                  title="Requirements/CHE.FXREQ.001.F">Produce a range of prepared and ad hoc reports and analyses </a>
+            </td>
+            <td>
+<p><em>Business process</em> (F) Aggregate Reporting:
+As a &lt;a href="ActorDefinition-facilitystafffacilitystaffinchargedistricthealthofficerstaff.html"&gt;Facility staff, facility staff in charge, district health officer/staff&lt;/a&gt;, I want to:
+&gt;Produce a range of prepared and ad hoc reports and analyses </p>
+
+<p>so that</p>
+
+<p>&gt;I am able to use data collected at the facility, including data for service delivery (beyond reporting purposes alone)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.002.D.html"
+                  title="Requirements/CHE.FXREQ.002.D">Provide a list of emergency referral locations and contact details if local emergency number (e.g. 911/999) is not used</a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a list of emergency referral locations and contact details if local emergency number (e.g. 911/999) is not used</p>
+
+<p>so that</p>
+
+<p>&gt;I can arrange emergency services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.001.E.html"
+                  title="Requirements/CHE.FXREQ.001.E">Provide a list of follow-up location options and contact details</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Provide a list of follow-up location options and contact details</p>
+
+<p>so that</p>
+
+<p>&gt;I can choose the best options for the client and schedule a follow-up</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.003.D.html"
+                  title="Requirements/CHE.FXREQ.003.D">Provide a list of referral location options, specialisms and contact details</a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a list of referral location options, specialisms and contact details</p>
+
+<p>so that</p>
+
+<p>&gt;I can choose the best options for the client's contact facility and schedule a referral</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.016.E.html"
+                  title="Requirements/CHE.FXREQ.016.E">Provide a list of scheduled contacts and to allow for defaulters to be traced</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-communityhealthworker.html"&gt;Community health worker&lt;/a&gt;, I want to:
+&gt;Provide a list of scheduled contacts and to allow for defaulters to be traced</p>
+
+<p>so that</p>
+
+<p>&gt;I can track and follow up clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.029.A.html"
+                  title="Requirements/CHE.FXREQ.029.A">Provide a list of scheduled contacts to allow for defaulters to be traced</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Provide a list of scheduled contacts to allow for defaulters to be traced</p>
+
+<p>so that</p>
+
+<p>&gt;I can track and follow up clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.028.B.html"
+                  title="Requirements/CHE.FXREQ.028.B">Provide a list of tests that the health worker can order</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a list of tests that the health worker can order</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.020.B.html"
+                  title="Requirements/CHE.FXREQ.020.B">Provide a list of tests that the health worker can order for the client based on guidance for their age/symptoms/diagnosis</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a list of tests that the health worker can order for the client based on guidance for their age/symptoms/diagnosis</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.015.E.html"
+                  title="Requirements/CHE.FXREQ.015.E">Provide a list or roster of all clients in the schedule</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-communityhealthworker.html"&gt;Community health worker&lt;/a&gt;, I want to:
+&gt;Provide a list or roster of all clients in the schedule</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage and follow up on clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.009.D.html"
+                  title="Requirements/CHE.FXREQ.009.D">Provide a list or roster of all infant/child clients</a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a list or roster of all infant/child clients</p>
+
+<p>so that</p>
+
+<p>&gt;I know which clients to follow up or are due for services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.030.A.html"
+                  title="Requirements/CHE.FXREQ.030.A">Provide a list or roster of all infant/child clients due to arrive</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Provide a list or roster of all infant/child clients due to arrive</p>
+
+<p>so that</p>
+
+<p>&gt;I know which clients to follow up or are due for services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.002.html"
+                  title="Requirements/CHE.NFXNREQ.002">Provide a means to ensure confidentiality and privacy of personal health information</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide a means to ensure confidentiality and privacy of personal health information</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.010.html"
+                  title="Requirements/CHE.NFXNREQ.010">Provide a mechanism to securely change a user's password</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Provide a mechanism to securely change a user's password</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.002.G.html"
+                  title="Requirements/CHE.FXREQ.002.G">Provide a modular approach to the solution to accommodate variations required to make the solution country-specific, for example: 
+- ability to use/not to use personal identifiers for registration 
+- include a focus on symptoms/diagnosis that may appear in a country-susceptible manner (malaria, HIV)
+- treatment modules that may be available in the country/setting (e.g. oral only vs injections)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Provide a modular approach to the solution to accommodate variations required to make the solution country-specific, for example:</p>
+<ul>
+  <li>ability to use/not to use personal identifiers for registration</li>
+  <li>include a focus on symptoms/diagnosis that may appear in a country-susceptible manner (malaria, HIV)</li>
+  <li>treatment modules that may be available in the country/setting (e.g. oral only vs injections)</li>
+</ul>
+
+<p>so that</p>
+
+<p>&gt;The registration and consultation process includes what is more likely required without by-passing questions that are not required</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.008.C.html"
+                  title="Requirements/CHE.FXREQ.008.C">Provide a source to access accurate health information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a source to access accurate health information</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.016.C.html"
+                  title="Requirements/CHE.FXREQ.016.C">Provide a source to access accurate health information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a source to access accurate health information</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.015.B.html"
+                  title="Requirements/CHE.FXREQ.015.B">Provide a standardized form for the entry of clinical data</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a standardized form for the entry of clinical data</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client's health information is recorded and up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.024.B.html"
+                  title="Requirements/CHE.FXREQ.024.B">Provide a standardized form for the entry of clinical data</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a standardized form for the entry of clinical data</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client's health information is recorded and up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.023.B.html"
+                  title="Requirements/CHE.FXREQ.023.B">Provide a standardized form for the entry of the client's profile</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a standardized form for the entry of the client's profile</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client's health information is recorded and up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.014.B.html"
+                  title="Requirements/CHE.FXREQ.014.B">Provide a standardized form for the entry of the clients profile</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide a standardized form for the entry of the clients profile</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the client's health information is recorded and up to date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.034.html"
+                  title="Requirements/CHE.NFXNREQ.034">Provide a unique version number for each revision</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Provide a unique version number for each revision</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.013.D.html"
+                  title="Requirements/CHE.FXREQ.013.D">Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality</a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.023.E.html"
+                  title="Requirements/CHE.FXREQ.023.E">Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-neonateinfantchildcaregiver.html"&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a way for the client's caregiver to receive information messages in a way that ensures patient confidentiality</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.022.E.html"
+                  title="Requirements/CHE.FXREQ.022.E">Provide a way to share sources for access accurate health information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-neonateinfantchildcaregiver.html"&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a way to share sources for access accurate health information</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.D.html"
+                  title="Requirements/CHE.FXREQ.012.D">Provide a way to share sources to access to accurate health information </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide a way to share sources to access to accurate health information</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.003.html"
+                  title="Requirements/CHE.NFXNREQ.003">Provide ability for allowed users to view confidential data</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide ability for allowed users to view confidential data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.066.html"
+                  title="Requirements/CHE.NFXNREQ.066">Provide access to data through application programming interfaces to interface with other SMART guideline reference App solutions, incumbent solutions (e.g. registration systems) and reporting tools</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+Provide access to data through application programming interfaces to interface with other SMART guideline reference App solutions, incumbent solutions (e.g. registration systems) and reporting tools</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.006.C.html"
+                  title="Requirements/CHE.FXREQ.006.C">Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.014.C.html"
+                  title="Requirements/CHE.FXREQ.014.C">Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide context-sensitive, real-time decision support in response to the entry of clinical data (alerts, advice, resources)</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.007.C.html"
+                  title="Requirements/CHE.FXREQ.007.C">Provide decision support as appropriate for users </a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide decision support as appropriate for users</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.003.C.html"
+                  title="Requirements/CHE.FXREQ.003.C">Provide decision support as appropriate for users based on the data entered</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide decision support as appropriate for users based on the data entered</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.C.html"
+                  title="Requirements/CHE.FXREQ.012.C">Provide decision support as appropriate for users based on the data entered</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide decision support as appropriate for users based on the data entered</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.015.C.html"
+                  title="Requirements/CHE.FXREQ.015.C">Provide decision support as appropriate for users based on the data entered</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide decision support as appropriate for users based on the data entered</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.007.html"
+                  title="Requirements/CHE.NFXNREQ.007">Provide encrypted communication between components</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide encrypted communication between components</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.029.B.html"
+                  title="Requirements/CHE.FXREQ.029.B">Provide fields where test results that have been ordered can be recorded</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide fields where test results that have been ordered can be recorded</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.058.html"
+                  title="Requirements/CHE.NFXNREQ.058">Provide guidance to the users to better support clinical guidelines and best clinical practices</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide guidance to the users to better support clinical guidelines and best clinical practices</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.021.B.html"
+                  title="Requirements/CHE.FXREQ.021.B">Provide information so that test results that have been ordered can be recorded</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide information so that test results that have been ordered can be recorded</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.051.html"
+                  title="Requirements/CHE.NFXNREQ.051">Provide informative error messages and tooltips</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Provide informative error messages and tooltips</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.001.html"
+                  title="Requirements/CHE.NFXNREQ.001">Provide password-protected access for authorized users</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – confidentiality
+Provide password-protected access for authorized users</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.016.B.html"
+                  title="Requirements/CHE.FXREQ.016.B">Provide real-time range checks and data integrity checks on data</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide real-time range checks and data integrity checks on data</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the entry of accurate information and reduce errors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.025.B.html"
+                  title="Requirements/CHE.FXREQ.025.B">Provide real-time range checks and data integrity checks on data</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide real-time range checks and data integrity checks on data</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure the entry of accurate information and reduce errors</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.025.html"
+                  title="Requirements/CHE.NFXNREQ.025">Provide role-based access</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Provide role-based access</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.015.html"
+                  title="Requirements/CHE.NFXNREQ.015">Provide role-based access to the system</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Provide role-based access to the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.013.A.html"
+                  title="Requirements/CHE.FXREQ.013.A">Provide sufficient data to rule out that this client is already in the system</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Provide sufficient data to rule out that this client is already in the system</p>
+
+<p>so that</p>
+
+<p>&gt;I can avoid duplicates</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.027.A.html"
+                  title="Requirements/CHE.FXREQ.027.A">Provide the ability to "check in" for a scheduled contact</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Provide the ability to "check in" for a scheduled contact</p>
+
+<p>so that</p>
+
+<p>&gt;I can initiate services at the follow-up contact</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.031.A.html"
+                  title="Requirements/CHE.FXREQ.031.A">Provide tools to search, sort and filter the infant/child client database</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Provide tools to search, sort and filter the infant/child client database</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage and follow up on clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.010.D.html"
+                  title="Requirements/CHE.FXREQ.010.D">Provide tools to search, sort and filter the infant/child database</a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;Provide tools to search, sort and filter the infant/child database</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage and follow up on clients requiring services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.D.html"
+                  title="Requirements/CHE.FXREQ.011.D">Provide/print/share information/clinical guidance to the client's caregiver as relevant </a>
+            </td>
+            <td>
+<p><em>Business process</em> (D) Referral:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide/print/share information/clinical guidance to the client's caregiver as relevant</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.021.E.html"
+                  title="Requirements/CHE.FXREQ.021.E">Provide/print/share information/clinical guidance with the client's caregiver as relevant </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-neonateinfantchildcaregiver.html"&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Provide/print/share information/clinical guidance with the client's caregiver as relevant</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.075.html"
+                  title="Requirements/CHE.NFXNREQ.075">Provision of design, build, technical system and architecture, and testing documentation for future support and further configuration of the solution for other health intervention initiatives</a>
+            </td>
+            <td>
+<p><em>Category</em>: Documentation
+Provision of design, build, technical system and architecture, and testing documentation for future support and further configuration of the solution for other health intervention initiatives</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.A.html"
+                  title="Requirements/CHE.FXREQ.012.A">Read client identification system (e.g. quick response [QR] code, barcode, fingerprint) and pull up client information</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Read client identification system (e.g. quick response [QR] code, barcode, fingerprint) and pull up client information</p>
+
+<p>so that</p>
+
+<p>&gt;I can confirm that it is the correct client and update information as necessary</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.009.C.html"
+                  title="Requirements/CHE.FXREQ.009.C">Receive information messages in a way that ensures patient confidentiality</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Receive information messages in a way that ensures patient confidentiality</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.017.C.html"
+                  title="Requirements/CHE.FXREQ.017.C">Receive information messages/alerts in a way that ensures patient confidentiality</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Receive information messages/alerts in a way that ensures patient confidentiality</p>
+
+<p>so that</p>
+
+<p>&gt;I can manage my client's health in my daily life</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.025.A.html"
+                  title="Requirements/CHE.FXREQ.025.A">Record a time/date-stamped new contact (encounter)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Record a time/date-stamped new contact (encounter)</p>
+
+<p>so that</p>
+
+<p>&gt;I can confirm when the client came</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.017.html"
+                  title="Requirements/CHE.NFXNREQ.017">Record all authentication violations</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – audit trail and logs
+Record all authentication violations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.004.E.html"
+                  title="Requirements/CHE.FXREQ.004.E">Record identification and tracking information (such as mobile phone number) </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Record identification and tracking information (such as mobile phone number)</p>
+
+<p>so that</p>
+
+<p>&gt;I can follow up and remind the client on when to return for services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.E.html"
+                  title="Requirements/CHE.FXREQ.012.E">Record identification and tracking information (such as mobile phone number) </a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-facilityhealthworker.html"&gt;Facility health worker&lt;/a&gt;, I want to:
+&gt;Record identification and tracking information (such as mobile phone number)</p>
+
+<p>so that</p>
+
+<p>&gt;I can follow up and remind the client on when to return for services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.017.E.html"
+                  title="Requirements/CHE.FXREQ.017.E">Refer to Business Process A: Registration</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-neonateinfantchildcaregiver.html"&gt;Neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Refer to Business Process A: Registration</p>
+
+<p>so that</p>
+
+<p>&gt;I can register attendance of the follow-up</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.018.E.html"
+                  title="Requirements/CHE.FXREQ.018.E">Refer to Business Process A: Registration</a>
+            </td>
+            <td>
+<p><em>Business process</em> (E) Follow-up:
+As a &lt;a href="ActorDefinition-communityhealthworker.html"&gt;Community health worker&lt;/a&gt;, I want to:
+&gt;Refer to Business Process A: Registration</p>
+
+<p>so that</p>
+
+<p>&gt;I can identify the correct client details and health records</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.039.html"
+                  title="Requirements/CHE.NFXNREQ.039">Report version number when saving data to the database</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Report version number when saving data to the database</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.A.html"
+                  title="Requirements/CHE.FXREQ.011.A">Require a user to search if a client is already in the system before starting a new medical record entry</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Require a user to search if a client is already in the system before starting a new medical record entry</p>
+
+<p>so that</p>
+
+<p>&gt;I can confirm that it is the correct client and update information as necessary</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.012.html"
+                  title="Requirements/CHE.NFXNREQ.012">Reset a user's password in a secure manner</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – authentication
+Reset a user's password in a secure manner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.046.html"
+                  title="Requirements/CHE.NFXNREQ.046">Scalable to accommodate new demands</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – scalability
+Scalable to accommodate new demands</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.009.A.html"
+                  title="Requirements/CHE.FXREQ.009.A">Search if the client is already in system (using at least two identifiers) (including information pertaining to the client's caregiver)</a>
+            </td>
+            <td>
+<p><em>Business process</em> (A) Registration:
+As a &lt;a href="ActorDefinition-healthworkerorclerk.html"&gt;Health worker or clerk&lt;/a&gt;, I want to:
+&gt;Search if the client is already in system (using at least two identifiers) (including information pertaining to the client's caregiver)</p>
+
+<p>so that</p>
+
+<p>&gt;I can check if this is a new or existing client</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.042.html"
+                  title="Requirements/CHE.NFXNREQ.042">Show the number of records that are not yet synchronized</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Show the number of records that are not yet synchronized</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.054.html"
+                  title="Requirements/CHE.NFXNREQ.054">Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Simplify data recording through predefined dropdown or searchable lists, radio buttons and check boxes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.001.G.html"
+                  title="Requirements/CHE.FXREQ.001.G">Solution must be able to leverage the data dictionary (to be produced as part of workstream 2/3 work) </a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;Solution must be able to leverage the data dictionary (to be produced as part of workstream 2/3 work)</p>
+
+<p>so that</p>
+
+<p>&gt;The tool is consistent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.013.C.html"
+                  title="Requirements/CHE.FXREQ.013.C">Suggest appropriate treatments/investigations based on findings</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Suggest appropriate treatments/investigations based on findings</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.004.C.html"
+                  title="Requirements/CHE.FXREQ.004.C">Suggest appropriate treatments/investigations based on findings including the ability to propose alternative treatments in the case that the primary treatment is not available</a>
+            </td>
+            <td>
+<p><em>Business process</em> (C) Treat the child:
+As a &lt;a href="ActorDefinition-healthworkerandneonateinfantchildcaregiver.html"&gt;Health worker and neonate/infant/child (caregiver)&lt;/a&gt;, I want to:
+&gt;Suggest appropriate treatments/investigations based on findings including the ability to propose alternative treatments in the case that the primary treatment is not available</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.033.html"
+                  title="Requirements/CHE.NFXNREQ.033">Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing</a>
+            </td>
+            <td>
+<p><em>Category</em>: Security – user management
+Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.055.html"
+                  title="Requirements/CHE.NFXNREQ.055">Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Support multiple languages – English, French, Spanish, Chinese, Russian, Arabic</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.053.html"
+                  title="Requirements/CHE.NFXNREQ.053">Support real-time data entry validation and feedback to prevent data entry errors from being recorded</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Support real-time data entry validation and feedback to prevent data entry errors from being recorded</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.067.html"
+                  title="Requirements/CHE.NFXNREQ.067">The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources)</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – interoperability
+The reference application must have an FHIR back end/FHIR native and leverage the workstream 3 content (CQL + FHIR resources)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.011.G.html"
+                  title="Requirements/CHE.FXREQ.011.G">The solution to represent data in an FHIR format that can be synced with client applications that use the FHIR international patient summary (IPS) on their mobile devices</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;The solution to represent data in an FHIR format that can be synced with client applications that use the FHIR international patient summary (IPS) on their mobile devices</p>
+
+<p>so that</p>
+
+<p>&gt;To ensure that clients are able to access their personal records and keep a copy on their phones using the Health Level 7 IPS format.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.009.G.html"
+                  title="Requirements/CHE.FXREQ.009.G">The solution to store data in an FHIR-compliant server</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;The solution to store data in an FHIR-compliant server</p>
+
+<p>so that</p>
+
+<p>&gt;Consistency of data representation and ability to exchange data with other services and solutions using FHIR standards and common value sets (International Statistical Classification of Diseases and Related Health Problems, Logical Observation Identifiers, Names and Codes)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.008.G.html"
+                  title="Requirements/CHE.FXREQ.008.G">The solution to support multi-media, such as video, photos and audio</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;The solution to support multi-media, such as video, photos and audio</p>
+
+<p>so that</p>
+
+<p>&gt;Examples of symptoms, diagnosis and treatment may be used throughout the consultation process</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.010.G.html"
+                  title="Requirements/CHE.FXREQ.010.G">The solution to sync data in an FHIR-compliant server</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;The solution to sync data in an FHIR-compliant server</p>
+
+<p>so that</p>
+
+<p>&gt;Ensure that data are stored and synced with a server, so that patient information relevant to another user of Child Health in Emergencies Digital Platform can access information for client history and to maintain continuity in care delivery</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.012.G.html"
+                  title="Requirements/CHE.FXREQ.012.G">To be able to add data and calculations as well as forms to the reference application, for localization (language support) and adaptation (addition of core health and data content), as well as calculations for decision-support and populating indicators</a>
+            </td>
+            <td>
+<p><em>Business process</em> (G) Triage and Emergency Assessment:
+As a &lt;a href="ActorDefinition-allusers.html"&gt;All Users&lt;/a&gt;, I want to:
+&gt;To be able to add data and calculations as well as forms to the reference application, for localization (language support) and adaptation (addition of core health and data content), as well as calculations for decision-support and populating indicators</p>
+
+<p>so that</p>
+
+<p>&gt;The tool and embedded forms (and associated interventions) can be adapted and localized by the user's governments/WHO/partners without requiring the assistance of engineers from the vendor each time</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.022.B.html"
+                  title="Requirements/CHE.FXREQ.022.B">To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision</p>
+
+<p>so that</p>
+
+<p>&gt;If a diagnosis is deemed incorrect that I can correct it with suitable reasoning to ensure that the correct treatment recommendations are provided</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.030.B.html"
+                  title="Requirements/CHE.FXREQ.030.B">To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to agree/disagree with the diagnosis presented from the guidance and be able to select an alternative diagnosis stating the reasoning regarding the decision</p>
+
+<p>so that</p>
+
+<p>&gt;If a diagnosis is deemed incorrect that I can correct it with suitable reasoning to ensure that the correct treatment recommendations are provided</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.005.B.html"
+                  title="Requirements/CHE.FXREQ.005.B">To be able to choose the option of a consultation that leads me through the full process to assess and classify the sick child and further to treat the child, referral and follow-up</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to choose the option of a consultation that leads me through the full process to assess and classify the sick child and further to treat the child, referral and follow-up</p>
+
+<p>so that</p>
+
+<p>&gt;I can ensure that a complete consultation is provided</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.004.B.html"
+                  title="Requirements/CHE.FXREQ.004.B">To be able to choose the option to refer in general to the SMART guidance without having to complete a full consultation (e.g. for training/reference only) </a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to choose the option to refer in general to the SMART guidance without having to complete a full consultation (e.g. for training/reference only)</p>
+
+<p>so that</p>
+
+<p>&gt;I can refresh my training and knowledge</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.017.B.html"
+                  title="Requirements/CHE.FXREQ.017.B">To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms </a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide a complete consultation and identify if there is more than one diagnosis and treatment recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.026.B.html"
+                  title="Requirements/CHE.FXREQ.026.B">To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms </a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to follow a consultation that focuses initially on the symptoms highlighted by the caregiver but that continues a full assessment of all possible symptoms</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide a complete consultation and identify if there is more than one diagnosis and treatment recommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.018.B.html"
+                  title="Requirements/CHE.FXREQ.018.B">To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available</p>
+
+<p>so that</p>
+
+<p>&gt;I do not have to start a new consultation for every health worker that the client is involved with</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.006.B.html"
+                  title="Requirements/CHE.FXREQ.006.B">To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available. </a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;To be able to route the consultation via different health workers and save the information already entered to the consultation, even if the consultation is not yet complete, enabling other health workers to see the information already entered and to be able to add/edit information as it becomes available.</p>
+
+<p>so that</p>
+
+<p>&gt;I do not have to start a new consultation for every health worker that the client is involved with</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.056.html"
+                  title="Requirements/CHE.NFXNREQ.056">Use industry-standard user interface practices and apply them in a consistent manner throughout the system</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – usability
+Use industry-standard user interface practices and apply them in a consistent manner throughout the system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.FXREQ.009.B.html"
+                  title="Requirements/CHE.FXREQ.009.B">View a review of any past medical history previously entered</a>
+            </td>
+            <td>
+<p><em>Business process</em> (B) Assess and Classify the Sick Child:
+As a &lt;a href="ActorDefinition-healthworker.html"&gt;Health worker&lt;/a&gt;, I want to:
+&gt;View a review of any past medical history previously entered</p>
+
+<p>so that</p>
+
+<p>&gt;I can provide appropriate services according to the latest clinical protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.044.html"
+                  title="Requirements/CHE.NFXNREQ.044">Warn user if no valid back-up for more than a predefined number of days</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Warn user if no valid back-up for more than a predefined number of days</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Requirements-CHE.NFXNREQ.037.html"
+                  title="Requirements/CHE.NFXNREQ.037">Work in an environment that is subject to loss of connectivity</a>
+            </td>
+            <td>
+<p><em>Category</em>: System requirements – general
+Work in an environment that is subject to loss of connectivity</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FXREQCategories.html" title="ValueSet/FXREQCategories">Functional Requirement Categories</a>
+            </td>
+            <td>
+<p>Value Set for Functional Requirements Categories. Autogenerated from DAK artifacts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FXREQBusinessProcesses.html"
+                  title="ValueSet/FXREQBusinessProcesses">Functional Requirements - Business Process</a>
+            </td>
+            <td>
+<p>ValueSet of Functional Requirements - Business Process</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FXREQCategories.html"
+                  title="CodeSystem/FXREQCategories">Functional Requirement Categories</a>
+            </td>
+            <td>
+<p>CodeSystem for Functional Requirements Categories.  Autogenerated from DAK artifacts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FXREQBusinessProcesses.html"
+                  title="CodeSystem/FXREQBusinessProcesses">Functional Requirements - Business Process</a>
+            </td>
+            <td>
+<p>ValueSet of Functional Requirements - Business Process</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.dak-ccc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, Apr 18, 2025 02:24+0000">2025-04-18</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/dak-ccc/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+
