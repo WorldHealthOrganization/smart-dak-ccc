@@ -1,4 +1,4 @@
-//non-functional requirment instance generated from row 50
+//non-functional requirment instance generated from row 51
 Instance: CHE.NFXNREQ.050
 InstanceOf: SGRequirements
 Usage: #definition
@@ -7,6 +7,10 @@ Usage: #definition
 * name = "Be user-friendly for people with low computer literacy"
 * publisher = "WHO"
 * experimental = true
+* extension[classification].valueCoding[+] = FXREQCategories#Systemrequirementsusability
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.1
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.2
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.4
 * description = """
 *Category*: System requirements – usability
 Be user-friendly for people with low computer literacy

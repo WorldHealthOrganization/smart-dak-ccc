@@ -1,4 +1,4 @@
-//non-functional requirment instance generated from row 11
+//non-functional requirment instance generated from row 12
 Instance: CHE.NFXNREQ.011
 InstanceOf: SGRequirements
 Usage: #definition
@@ -7,6 +7,10 @@ Usage: #definition
 * name = "Notify the user of a password change to their account"
 * publisher = "WHO"
 * experimental = true
+* extension[classification].valueCoding[+] = FXREQCategories#Securityauthentication
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.1
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.2
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#4.4
 * description = """
 *Category*: Security – authentication
 Notify the user of a password change to their account

@@ -8,6 +8,10 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
+* extension[classification].valueCoding[+] = FXREQBusinessProcesses#C
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.2
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.3
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.9
 * extension[userstory].extension[capability].valueString = "Allow the recording of key observations during the follow-up visit"
 * extension[userstory].extension[benefit].valueString = "I can ensure the client's health information is recorded and kept up to date"
 * description = """

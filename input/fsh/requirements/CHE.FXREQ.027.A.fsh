@@ -8,6 +8,8 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworkerorclerk)
+* extension[classification].valueCoding[+] = FXREQBusinessProcesses#A
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.1
 * extension[userstory].extension[capability].valueString = "Provide the ability to \"check in\" for a scheduled contact"
 * extension[userstory].extension[benefit].valueString = "I can initiate services at the follow-up contact"
 * description = """

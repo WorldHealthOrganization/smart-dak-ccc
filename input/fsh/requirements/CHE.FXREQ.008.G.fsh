@@ -8,6 +8,11 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(allusers)
+* extension[classification].valueCoding[+] = FXREQBusinessProcesses#G
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.2
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.3
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.8
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.10
 * extension[userstory].extension[capability].valueString = "The solution to support multi-media, such as video, photos and audio"
 * extension[userstory].extension[benefit].valueString = "Examples of symptoms, diagnosis and treatment may be used throughout the consultation process"
 * description = """

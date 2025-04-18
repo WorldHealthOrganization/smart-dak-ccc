@@ -8,6 +8,9 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworkerandneonateinfantchildcaregiver)
+* extension[classification].valueCoding[+] = FXREQBusinessProcesses#D
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#1.1
+* extension[classification].valueCoding[+] = http://smart.who.int/base/CodeSystem/DHIv1#2.6
 * extension[userstory].extension[capability].valueString = "Find facilities that can provide the service or treatment method that mine cannot provide. "
 * extension[userstory].extension[benefit].valueString = "The client does not travel to a facility that cannot help them"
 * description = """
